@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>polyvox</title>
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Nova+Mono|Quattrocento:700|Righteous' rel='stylesheet' type='text/css'>
+    <link rel="import" href="/bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="/polyvox-countdown.html">
+    <style is="custom-style">
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        background-color: var(--paper-green-500);
+      }
+
+      .title {
+        color: white;
+        font-family: 'Righteous', cursive;
+        font-size: 10vw;
+        text-shadow: 1px 2px 2px var(--paper-green-900);
+        margin-bottom: .25em;
+      }
+
+      .prologue {
+        color: white;
+        font-family: 'Quattrocento';
+        font-size: 3vw;
+        font-weight: 700;
+        padding: 1em 0;
+        background-color: var(--paper-indigo-900);
+        text-align: center;
+      }
+
+      .content {
+        background-color: white;
+      }
+
+      .countdown {
+        font-size: 12vw;
+      }
+
+      @media (max-width: 600px) {
+        .title {
+          font-size: 4em;
+        }
+
+        .prologue {
+          font-size: 2em;
+        }
+
+        .countdown {
+          font-size: 3em;
+        }
+      }
+    </style>
+  </head>
+  <body class="fullbleed layout vertical center" unresolved>
+    <div class="flex-2 layout horizontal">
+      <div class="title self-center">polyvox</div>
+    </div>
+    <div class="content flex-3 self-stretch layout vertical center">
+      <div class="prologue self-stretch">first podcast in</div>
+      <div class="flex layout horizontal">
+        <polyvox-countdown class="countdown self-center" to="2015-06-17T17:00:00.000Z"></polyvox-countdown>
+      </div>
+    </div>
+  </body>
+</html>

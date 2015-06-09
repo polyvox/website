@@ -1,0 +1,173 @@
+<link rel="import" href="/bower_components/paper-styles/paper-styles.html">
+
+<dom-module id="polyvox-countdown">
+  <style>
+    :host {
+      font-family: 'Nova Mono', monospace;
+    }
+
+    :host .z0 :last-child {
+      color: var(--paper-brown-900);
+    }
+    :host .z1 :last-child {
+      color: var(--paper-brown-800);
+    }
+    :host .z2 :last-child {
+      color: var(--paper-brown-700);
+    }
+    :host .z3 :last-child {
+      color: var(--paper-brown-600);
+    }
+    :host .z4 :last-child {
+      color: var(--paper-brown-500);
+    }
+    :host .z5 :last-child {
+      color: var(--paper-brown-400);
+    }
+    :host .z6 :last-child {
+      color: var(--paper-brown-300);
+    }
+    :host .z7 :last-child {
+      color: var(--paper-brown-200);
+    }
+    :host .z8 :last-child {
+      color: var(--paper-brown-100);
+    }
+    :host .z9 :last-child {
+      color: var(--paper-brown-100);
+    }
+
+    :host .a0 :first-child {
+      color: var(--paper-brown-900);
+    }
+    :host .a1 :first-child {
+      color: var(--paper-brown-800);
+    }
+    :host .a2 :first-child {
+      color: var(--paper-brown-700);
+    }
+    :host .a3 :first-child {
+      color: var(--paper-brown-600);
+    }
+    :host .a4 :first-child {
+      color: var(--paper-brown-500);
+    }
+    :host .a5 :first-child {
+      color: var(--paper-brown-400);
+    }
+    :host .a6 :first-child {
+      color: var(--paper-brown-300);
+    }
+    :host .a7 :first-child {
+      color: var(--paper-brown-200);
+    }
+    :host .a8 :first-child {
+      color: var(--paper-brown-100);
+    }
+    :host .a9 :first-child {
+      color: var(--paper-brown-100);
+    }
+
+    :host .z0 :last-child:after {
+      content: "0";
+    }
+    :host .z1 :last-child:after {
+      content: "1";
+    }
+    :host .z2 :last-child:after {
+      content: "2";
+    }
+    :host .z3 :last-child:after {
+      content: "3";
+    }
+    :host .z4 :last-child:after {
+      content: "4";
+    }
+    :host .z5 :last-child:after {
+      content: "5";
+    }
+    :host .z6 :last-child:after {
+      content: "6";
+    }
+    :host .z7 :last-child:after {
+      content: "7";
+    }
+    :host .z8 :last-child:after {
+      content: "8";
+    }
+    :host .z9 :last-child:after {
+      content: "9";
+    }
+
+    :host .a0 :first-child:after {
+      content: "0";
+    }
+    :host .a1 :first-child:after {
+      content: "1";
+    }
+    :host .a2 :first-child:after {
+      content: "2";
+    }
+    :host .a3 :first-child:after {
+      content: "3";
+    }
+    :host .a4 :first-child:after {
+      content: "4";
+    }
+    :host .a5 :first-child:after {
+      content: "5";
+    }
+    :host .a6 :first-child:after {
+      content: "6";
+    }
+    :host .a7 :first-child:after {
+      content: "7";
+    }
+    :host .a8 :first-child:after {
+      content: "8";
+    }
+    :host .a9 :first-child:after {
+      content: "9";
+    }
+  </style>
+  <template>
+    <span id="days" class$="[[daysClass]]"><span></span><span></span></span>
+    <span id="hours" class$="[[hoursClass]]"><span></span><span></span></span>
+    <span id="minutes" class$="[[minutesClass]]"><span></span><span></span></span>
+    <span id="seconds" class$="[[secondsClass]]"><span></span><span></span></span>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'polyvox-countdown',
+
+    properties: {
+      to: Date
+    },
+
+    ready: function () {
+      var self = this;
+
+      function generateClasses(n) {
+        return 'z' + (n % 10) + ' a' + Math.floor(n / 10);
+      }
+
+      function count() {
+        if (self.to) {
+          var ms = self.to - new Date();
+          var days = Math.floor(ms / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(ms / (1000 * 60 * 60)) % 24;
+          var mins = Math.floor(ms / (1000 * 60)) % 60;
+          var secs = Math.floor(ms / 1000) % 60;
+          self.daysClass = generateClasses(days);
+          self.hoursClass = generateClasses(hours);
+          self.minutesClass = generateClasses(mins);
+          self.secondsClass = generateClasses(secs);
+        }
+        requestAnimationFrame(count);
+      }
+      requestAnimationFrame(count);
+    }
+  });
+</script>

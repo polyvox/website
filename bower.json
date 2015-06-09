@@ -1,0 +1,21 @@
+{
+  "name": "polyvox.audio",
+  "version": "0.0.0",
+  "authors": [
+    "Curtis Schlak <realistschuckle@gmail.com>"
+  ],
+  "description": "The pages for polyvox.audio",
+  "license": "MIT",
+  "homepage": "http://polyvox.audio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0"
+  }
+}
