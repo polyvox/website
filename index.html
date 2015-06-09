@@ -16,13 +16,13 @@
       }
 
       .prologue {
-        color: white;
+        color: var(--paper-brown-500);
         font-family: 'Quattrocento';
-        font-size: 3vw;
+        font-size: 8vw;
         font-weight: 700;
-        padding: 1em 0;
-        background-color: var(--paper-indigo-900);
         text-align: center;
+        padding: .25em;
+        border-bottom: 1px solid var(--paper-grey-200);
       }
 
       img {
@@ -35,11 +35,21 @@
       }
 
       .content {
-        background-color: white;
+        background-color: var(--paper-grey-200);
       }
 
       .countdown {
         font-size: 12vw;
+      }
+
+      .counter {
+        padding: 1em;
+      }
+
+      .countdown-card {
+        margin-top: 2em;
+        background-color: white;
+        @apply(--shadow-elevation-2dp);
       }
 
       @media (max-width: 600px) {
@@ -58,13 +68,15 @@
     </style>
   </head>
   <body class="fullbleed layout vertical center" unresolved>
-    <div class="flex-2 layout vertical self-stretch padded">
+    <div class="flex-2 layout vertical end-justified self-stretch padded">
       <img class="self-stretch" src="./polyvox.svg">
     </div>
     <div class="content flex-3 self-stretch layout vertical center">
-      <div class="prologue self-stretch">first podcast in</div>
-      <div class="flex layout horizontal">
-        <polyvox-countdown class="countdown self-center" to="2015-06-17T17:00:00.000Z"></polyvox-countdown>
+      <div class="countdown-card">
+        <div class="prologue self-stretch">first podcast in</div>
+        <div class="flex layout horizontal counter">
+          <polyvox-countdown class="countdown self-center" to="2015-06-17T17:00:00.000Z"></polyvox-countdown>
+        </div>
       </div>
     </div>
   </body>
