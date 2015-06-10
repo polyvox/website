@@ -3,81 +3,87 @@
   <head>
     <title>polyvox</title>
     <script src="./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Nova+Mono|Quattrocento:700|Righteous' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
     <link rel="import" href="./bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="./bower_components/paper-drawer-panel/paper-drawer-panel.html">
+    <link rel="import" href="./bower_components/paper-header-panel/paper-header-panel.html">
+    <link rel="import" href="./bower_components/paper-menu/paper-menu.html">
+    <link rel="import" href="./bower_components/paper-item/paper-item.html">
+    <link rel="import" href="./bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="./bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="./bower_components/iron-icons/iron-icons.html">
     <link rel="import" href="./polyvox-countdown.html">
     <style is="custom-style">
       html, body {
         height: 100%;
+        font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
       }
 
-      body {
-        background-color: var(--paper-green-500);
+      .drawer {
+        background-color: var(--paper-grey-100);
       }
 
-      .prologue {
-        color: var(--paper-brown-500);
-        font-family: 'Quattrocento';
-        font-size: 8vw;
-        font-weight: 700;
-        text-align: center;
-        padding: .25em;
-        border-bottom: 1px solid var(--paper-grey-200);
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      .padded {
-        padding: 24px;
-      }
-
-      .content {
-        background-color: var(--paper-grey-200);
-      }
-
-      .countdown {
-        font-size: 12vw;
-      }
-
-      .counter {
+      .drawer .paper-header {
         padding: 1em;
+        border-bottom: 1px solid var(--paper-grey-300);
+        text-align: center;
       }
 
-      .countdown-card {
-        margin-top: 2em;
-        background-color: white;
-        @apply(--shadow-elevation-2dp);
+      .main .paper-header {
+        background-color: var(--paper-green-500);
+        height: 64px;
+        text-align: center;
+        transition: height 0.5s;
+        color: white;
       }
 
-      @media (max-width: 600px) {
-        .title {
-          font-size: 4em;
-        }
+      .main .paper-header.tall {
+        height: 300px;
+      }
 
-        .prologue {
-          font-size: 2em;
-        }
+      img.logo {
+        width: auto;
+        height: 100%;
+      }
 
-        .countdown {
-          font-size: 3em;
-        }
+      #menu-button {
+        margin: 12px 0 0 12px;
+      }
+
+      paper-menu {
+        --paper-menu-background-color: var(--paper-grey-100);
+      }
+
+      paper-toolbar {
+        --paper-toolbar-background: transparent;
       }
     </style>
   </head>
-  <body class="fullbleed layout vertical center" unresolved>
-    <div class="flex-2 layout vertical end-justified self-stretch padded">
-      <img class="self-stretch" src="./polyvox.svg">
-    </div>
-    <div class="content flex-3 self-stretch layout vertical center">
-      <div class="countdown-card">
-        <div class="prologue self-stretch">first podcast in</div>
-        <div class="flex layout horizontal counter">
-          <polyvox-countdown class="countdown self-center" to="2015-06-17T17:00:00.000Z"></polyvox-countdown>
+  <body class="fullbleed" unresolved>
+    <paper-drawer-panel>
+      <paper-header-panel class="drawer" mode="seamed" drawer>
+        <div class="paper-header">
+          <a href="./">
+            <img class="logo" src="./polyvox-black.svg">
+          </a>
         </div>
-      </div>
-    </div>
+        <paper-menu>
+          <paper-item>who</paper-item>
+          <paper-item>podcasts</paper-item>
+          <paper-item>videos</paper-item>
+          <paper-item>articles</paper-item>
+        </paper-menu>
+      </paper-header-panel>
+      <paper-header-panel class="main" mode="waterfall" main>
+        <div class="paper-header">
+          <paper-toolbar>
+            <paper-icon-button id="menu-button" class="layout fixed-left" icon="menu" paper-drawer-toggle></paper-icon-button>
+            <div class="title">The Latest Thing</div>
+          </paper-toolbar>
+        </div>
+        <div>
+        </div>
+      </paper-header-panel>
+    </paper-drawer-panel>
   </body>
 </html>
