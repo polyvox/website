@@ -1,0 +1,19 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="polyvox-html">
+  <script>
+    Polymer({
+      is: 'polyvox-html',
+
+      properties: {
+        html: {
+          type: String,
+          observer: '_htmlChanged'
+        }
+      },
+
+      _htmlChanged: function () {
+        this.innerHTML = this.html;
+      }
+    });
+  </script>
+</dom-module>

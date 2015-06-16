@@ -1,0 +1,100 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="polyvox-rss">
+  <script>
+    function parseText(val) {
+      if (/^\s*$/.test(val)) {
+        return null;
+      }
+      if (/^(?:true|false)$/i.test(val)) {
+        return val.toLowerCase() === 'true';
+      }
+      if (isFinite(val)) {
+        return parseFloat(val);
+      }
+      if (isFinite(Date.parse(val))) {
+        return new Date(val);
+      }
+      return val;
+    }
+
+    function tree(xml) {
+      var result = true;
+      var length = 0;
+      var text = '';
+      var attrib = null;
+      if (xml.hasAttributes()) {
+        result = {};
+        for (length; length < xml.attributes.length; length += 1) {
+          attrib = xml.attributes.item(length);
+          result['@' + attrib.name.toLowerCase()] = parseText(attrib.value.trim());
+        }
+      }
+      if (xml.hasChildNodes()) {
+        for (var node, prop, content, item = 0; item < xml.childNodes.length; item += 1) {
+          node = xml.childNodes.item(item);
+          if (node.nodeType === 4) {
+            text += node.nodeValue;
+          } else if (node.nodeType === 3) {
+            text += node.nodeValue.trim();
+          } else if (node.nodeType === 1) {
+            if (length === 0) {
+              result = {};
+            }
+            prop = node.nodeName.toLowerCase().replace(/:/g, '_');
+            content = tree(node);
+            if (result.hasOwnProperty(prop)) {
+              if (result[prop].constructor !== Array) {
+                result[prop] = [result[prop]];
+              }
+              result[prop].push(content);
+            } else {
+              result[prop] = content;
+              length += 1;
+            }
+          }
+        }
+      }
+      if (text) {
+        length > 0 ? result.keyValue = parseText(text) : result = parseText(text);
+      }
+      return result;
+    }
+
+    Polymer({
+      is: 'polyvox-rss',
+
+      properties: {
+        items: {
+          type: Array,
+          readOnly: true,
+          notify: true
+        },
+        first: {
+          type: Object,
+          readOnly: true,
+          notify: true
+        }
+      },
+
+      created: function () {
+        var self = this;
+        var req = new XMLHttpRequest();
+        req.onload = function () {
+          var parser = new DOMParser();
+          var xml = parser.parseFromString(this.responseText, 'text/xml');
+          var itemTags = xml.getElementsByTagName('item');
+          var items = [];
+          for (var i = 0; i < itemTags.length ; i += 1) {
+            var o = tree(itemTags[i]);
+            o.formattedPubDate = o.pubdate.toLocaleDateString();
+            items.push(o);
+          }
+          self._setItems(items);
+          self._setFirst(items[0]);
+        };
+        req.open('get', 'http://podcasts.polyvox.audio/rss.xml');
+        req.send();
+      }
+    });
+  </script>
+</dom-module>

@@ -9,18 +9,32 @@
     <link rel="import" href="./bower_components/paper-header-panel/paper-header-panel.html">
     <link rel="import" href="./bower_components/paper-menu/paper-menu.html">
     <link rel="import" href="./bower_components/paper-item/paper-item.html">
+    <link rel="import" href="./bower_components/paper-item/paper-item-body.html">
     <link rel="import" href="./bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="./bower_components/paper-material/paper-material.html">
     <link rel="import" href="./bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="./bower_components/paper-button/paper-button.html">
     <link rel="import" href="./bower_components/iron-icons/iron-icons.html">
-    <link rel="import" href="./polyvox-countdown.html">
+    <link rel="import" href="./components/polyvox-rss.html">
+    <link rel="import" href="./components/polyvox-html.html">
     <style is="custom-style">
       html, body {
         height: 100%;
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        background-color: var(--paper-grey-300);
+      }
+
+      header, h1, h2, h3, h4, h5, h6 {
         font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
       }
 
       .drawer {
         background-color: var(--paper-grey-100);
+        border-right: 1px solid var(--paper-grey-400);
       }
 
       .drawer .paper-header {
@@ -29,16 +43,9 @@
         text-align: center;
       }
 
-      .main .paper-header {
-        background-color: var(--paper-green-500);
-        height: 64px;
-        text-align: center;
-        transition: height 0.5s;
-        color: white;
-      }
-
-      .main .paper-header.tall {
-        height: 300px;
+      .main .paper-header .title {
+        font-size: 38px;
+        font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
       }
 
       img.logo {
@@ -46,8 +53,58 @@
         height: 100%;
       }
 
+      .banner {
+        background-color: var(--paper-indigo-700);
+        margin: 0;
+        color: white;
+        padding: 0.5em;
+        text-align: center;
+        font-size: 48px;
+      }
+
       #menu-button {
         margin: 12px 0 0 12px;
+      }
+
+      #main-content-area {
+        padding: 1em 4em;
+      }
+
+      #latest {
+        background-color: white;
+        max-width: 640px;
+        min-width: 320px;
+        margin: auto;
+      }
+
+      .poly-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .card-body {
+        padding: 0.5em 2em;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .latest-title {
+        margin-bottom: 0;
+      }
+
+      .latest-subtitle {
+        margin-bottom: 1em;
+      }
+
+      .publication-date {
+        margin-top: 0;
+      }
+
+      paper-button {
+        color: var(--paper-blue-800);
       }
 
       paper-menu {
@@ -60,30 +117,65 @@
     </style>
   </head>
   <body class="fullbleed" unresolved>
-    <paper-drawer-panel>
-      <paper-header-panel class="drawer" mode="seamed" drawer>
-        <div class="paper-header">
-          <a href="./">
-            <img class="logo" src="./polyvox-black.svg">
-          </a>
-        </div>
-        <paper-menu>
-          <paper-item>who</paper-item>
-          <paper-item>podcasts</paper-item>
-          <paper-item>videos</paper-item>
-          <paper-item>articles</paper-item>
-        </paper-menu>
-      </paper-header-panel>
-      <paper-header-panel class="main" mode="waterfall" main>
-        <div class="paper-header">
-          <paper-toolbar>
-            <paper-icon-button id="menu-button" class="layout fixed-left" icon="menu" paper-drawer-toggle></paper-icon-button>
-            <div class="title">The Latest Thing</div>
-          </paper-toolbar>
-        </div>
-        <div>
-        </div>
-      </paper-header-panel>
-    </paper-drawer-panel>
+    <template is="dom-bind">
+      <paper-drawer-panel>
+        <paper-header-panel class="drawer" mode="seamed" drawer>
+          <div class="paper-header">
+            <a href="./">
+              <img class="logo" src="./polyvox-black.svg">
+            </a>
+          </div>
+          <paper-menu>
+            <paper-item>
+              <paper-item-body two-line>
+                <div>who</div>
+                <div secondary>the people behind the voices</div>
+              </paper-item-body>
+            </paper-item>
+            <paper-item>
+              <paper-item-body two-line>
+                <div>podcasts</div>
+                <div secondary>listen to our conversations</div>
+              </paper-item-body>
+            </paper-item>
+          </paper-menu>
+        </paper-header-panel>
+        <paper-header-panel class="main" mode="waterfall" main>
+          <div>
+            <paper-icon-button id="menu-button" class="layout" icon="menu" paper-drawer-toggle></paper-icon-button>
+          </div>
+          <div id="main-content-area">
+            <paper-material id="latest">
+              <h1 class="banner">THE NEWEST PODCAST</h1>
+              <img class="poly-img" src="[[ latest.itunes_image.@href ]]">
+              <div class="card-body">
+                <h1 class="latest-title">[[ latest.title ]]</h1>
+                <h2 class="publication-date">[[ latest.formattedPubDate ]]</h2>
+                <div class="latest-subtitle">[[ latest.description ]]</div>
+                <div class="layout horizontal end-justified">
+                  <paper-button>Listen to this podcast</paper-button>
+                  <div class="hidden">[[ latest.enclosure.@url ]]</div>
+                </div>
+              </div>
+            </paper-material>
+          </div>
+        </paper-header-panel>
+      </paper-drawer-panel>
+      <polyvox-rss id="rss" items="{{ items }}" first="{{ latest }}"></polyvox-rss>
+    </template>
+    <script>
+      document.body.addEventListener('click', function (e) {
+        var target = e.target;
+        while (target && target.tagName.toLowerCase() !== 'paper-button') {
+          target = target.parentNode;
+        }
+        if (target) {
+          while(target && (!target.tagName || target.tagName.toLowerCase() !== 'div')) {
+            target = target.nextSibling;
+          }
+          location.href = target.innerHTML;
+        }
+      });
+    </script>
   </body>
 </html>
