@@ -1,5 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../components/polyvox-html.html">
 <dom-module id="polyvox-podcast-card">
   <style>
     .podcast-card {
@@ -8,11 +10,65 @@
       min-width: 320px;
       margin: auto;
     }
+
+    .item-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    .item-content {
+      padding: .5em 1em;
+    }
+
+    .episode-number {
+      margin-bottom: 0;
+    }
+
+    .item-title {
+      margin: 0;
+    }
+
+    .publication-date {
+      margin-top: 0;
+    }
+
+    .item-description {
+      padding: .5em 1em;
+    }
+
+    .item-summary {
+      margin-top: 2em;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    paper-button {
+      color: var(--paper-blue-800);
+    }
   </style>
 
   <template>
     <paper-material class="podcast-card">
-      {{ item }}
+      <div class="layout horizontal">
+        <img class="item-image" src="[[ item.itunes_image.@href ]]">
+        <div class="item-content flex">
+          <h3 class="episode-number">Episode #<span>[[ item.number ]]</span></h3>
+          <h1 class="item-title">[[ item.title ]]</h1>
+          <h2 class="publication-date">[[ item.formattedPubDate ]]</h2>
+        </div>
+      </div>
+      <div class="item-description">
+        <div class="item-subtitle">[[ item.description ]]</div>
+        <div class="item-summary">
+          <polyvox-html html="[[ item.itunes_summary ]]"></polyvox-html>
+        </div>
+        <div class="layout horizontal end-justified">
+          <paper-button id="listen-to-me">Listen to this podcast</paper-button>
+          <div class="hidden">[[ item.enclosure.@url ]]</div>
+        </div>
+      </div>
     </paper-material>
   </template>
 
@@ -22,8 +78,15 @@
 
       properties: {
         item: {
-          type: Object
+          type: Object,
+          notify: true
         }
+      },
+
+      attached: function () {
+        this.$['listen-to-me'].addEventListener('click', function (e) {
+          location.href = e.target.nextSibling.innerHTML;
+        });
       }
     });
   </script>
