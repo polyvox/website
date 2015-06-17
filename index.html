@@ -15,6 +15,10 @@
     <link rel="import" href="./bower_components/paper-icon-button/paper-icon-button.html">
     <link rel="import" href="./bower_components/paper-button/paper-button.html">
     <link rel="import" href="./bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="./bower_components/iron-icons/hardware-icons.html">
+    <link rel="import" href="./bower_components/iron-icons/av-icons.html">
+    <link rel="import" href="./bower_components/iron-icons/social-icons.html">
+    <link rel="import" href="./bower_components/iron-pages/iron-pages.html">
     <link rel="import" href="./components/polyvox-rss.html">
     <link rel="import" href="./components/polyvox-html.html">
     <style is="custom-style">
@@ -54,9 +58,8 @@
       }
 
       .banner {
-        background-color: var(--paper-indigo-700);
+        background-color: var(--paper-green-200);
         margin: 0;
-        color: white;
         padding: 0.5em;
         text-align: center;
         font-size: 48px;
@@ -66,7 +69,7 @@
         margin: 12px 0 0 12px;
       }
 
-      #main-content-area {
+      #start-page, #about, #podcast-list {
         padding: 1em 4em;
       }
 
@@ -93,6 +96,7 @@
 
       .latest-title {
         margin-bottom: 0;
+        margin-top: 0;
       }
 
       .latest-subtitle {
@@ -101,6 +105,51 @@
 
       .publication-date {
         margin-top: 0;
+      }
+
+      .episode-number {
+        margin-bottom: 0;
+      }
+
+      .slightly-smaller {
+        --iron-icon-width: 18px;
+        --iron-icon-height: 18px;
+      }
+
+      .who-icon {
+        --iron-icon-width: 180px;
+        --iron-icon-height: 180px;
+      }
+
+      .blue {
+        background-color: var(--paper-blue-800);
+        color: white;
+      }
+
+      .red {
+        background-color: var(--paper-red-800);
+        color: white;
+      }
+
+      .orange {
+        background-color: var(--paper-orange-800);
+        color: white;
+      }
+
+      .who-card {
+        background-color: white;
+        margin: auto;
+        margin-bottom: 2em;
+        max-width: 640px;
+        min-width: 320px;
+      }
+
+      .who-card-about {
+        padding: 0.5em 1em;
+      }
+
+      paper-item {
+        cursor: pointer;
       }
 
       paper-button {
@@ -121,18 +170,18 @@
       <paper-drawer-panel>
         <paper-header-panel class="drawer" mode="seamed" drawer>
           <div class="paper-header">
-            <a href="./">
+            <a href="./" id="home-link">
               <img class="logo" src="./polyvox-black.svg">
             </a>
           </div>
-          <paper-menu>
-            <paper-item>
+          <paper-menu id="card-menu">
+            <paper-item id="who-link">
               <paper-item-body two-line>
                 <div>who</div>
                 <div secondary>the people behind the voices</div>
               </paper-item-body>
             </paper-item>
-            <paper-item>
+            <paper-item id="podcasts-link">
               <paper-item-body two-line>
                 <div>podcasts</div>
                 <div secondary>listen to our conversations</div>
@@ -144,29 +193,98 @@
           <div>
             <paper-icon-button id="menu-button" class="layout" icon="menu" paper-drawer-toggle></paper-icon-button>
           </div>
-          <div id="main-content-area">
-            <paper-material id="latest">
-              <h1 class="banner">THE NEWEST PODCAST</h1>
-              <img class="poly-img" src="[[ latest.itunes_image.@href ]]">
-              <div class="card-body">
-                <h1 class="latest-title">[[ latest.title ]]</h1>
-                <h2 class="publication-date">[[ latest.formattedPubDate ]]</h2>
-                <div class="latest-subtitle">[[ latest.description ]]</div>
-                <div class="layout horizontal end-justified">
-                  <paper-button>Listen to this podcast</paper-button>
-                  <div class="hidden">[[ latest.enclosure.@url ]]</div>
+          <iron-pages id="card-stack" selected="0">
+            <div id="start-page">
+              <paper-material id="latest">
+                <h1 class="banner">THE NEWEST PODCAST</h1>
+                <img class="poly-img" src="[[ latest.itunes_image.@href ]]">
+                <div class="card-body">
+                  <h3 class="episode-number">Episode #<span>[[ latest.number ]]</span></h3>
+                  <h1 class="latest-title">[[ latest.title ]]</h1>
+                  <h2 class="publication-date">[[ latest.formattedPubDate ]]</h2>
+                  <div class="latest-subtitle">[[ latest.description ]]</div>
+                  <div class="layout horizontal end-justified">
+                    <paper-button>
+                      <iron-icon icon="hardware:cast" class="slightly-smaller"></iron-icon>
+                      Listen to this podcast
+                    </paper-button>
+                    <div class="hidden">[[ latest.enclosure.@url ]]</div>
+                  </div>
+                  <div class="layout horizontal end-justified">
+                    <paper-button>
+                      <iron-icon icon="hardware:cast-connected" class="slightly-smaller"></iron-icon>
+                      Subscribe to the podcast
+                    </paper-button>
+                    <div class="hidden">[[ channel.subscribeLink ]]</div>
+                  </div>
                 </div>
-              </div>
-            </paper-material>
-          </div>
+              </paper-material>
+            </div>
+            <div id="about">
+              <paper-material class="who-card layout horizontal">
+                <div class="blue self-stretch layout horizontal center-center">
+                  <iron-icon icon="account-circle" class="who-icon blue"></iron-icon>
+                </div>
+                <div class="flex who-card-about">
+                  <h1>Heather</h1>
+                  <p>
+                    Heather is both coworker and friend to Curtis and Bryan.
+                    She lives in Houston but retreats to the Caribbean
+                    whenever she can. Her hobbies include scuba diving, bike
+                    riding, writing, reading, and binge watching cable series.
+                    She recently completed growing out her bangs. She loves
+                    dogs and has visits her favorite macaw, Peco, regularly.
+                  </p>
+                </div>
+              </paper-material>
+              <paper-material class="who-card layout horizontal">
+                <div class="red self-stretch layout horizontal center-center">
+                  <iron-icon icon="av:mic" class="who-icon red"></iron-icon>
+                </div>
+                <div class="flex who-card-about">
+                  <h1>Bryan</h1>
+                  <p>
+                    
+                  </p>
+                </div>
+              </paper-material>
+              <paper-material class="who-card layout horizontal">
+                <div class="orange self-stretch layout horizontal center-center">
+                  <iron-icon icon="social:mood-bad" class="who-icon orange"></iron-icon>
+                </div>
+                <div class="flex who-card-about">
+                  <h1>Curtis</h1>
+                  <p>
+                    
+                  </p>
+                </div>
+              </paper-material>
+            </div>
+            <div id="podcast-list">
+            </div>
+          </iron-pages>
         </paper-header-panel>
       </paper-drawer-panel>
-      <polyvox-rss id="rss" items="{{ items }}" first="{{ latest }}"></polyvox-rss>
+      <polyvox-rss id="rss" channel="{{ channel }}" items="{{ items }}" first="{{ latest }}"></polyvox-rss>
     </template>
     <script>
+      window.addEventListener('WebComponentsReady', function () {
+        document.getElementById('home-link').addEventListener('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          document.getElementById('card-stack').selected = 0;
+          document.getElementById('card-menu').select(null);
+        });
+        document.getElementById('who-link').addEventListener('click', function (e) {
+          document.getElementById('card-stack').selected = 1;
+        });
+        document.getElementById('podcasts-link').addEventListener('click', function (e) {
+          document.getElementById('card-stack').selected = 2;
+        });
+      });
       document.body.addEventListener('click', function (e) {
         var target = e.target;
-        while (target && target.tagName.toLowerCase() !== 'paper-button') {
+        while (target && (target.tagName || '').toLowerCase() !== 'paper-button') {
           target = target.parentNode;
         }
         if (target) {

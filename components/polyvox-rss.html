@@ -73,6 +73,11 @@
           type: Object,
           readOnly: true,
           notify: true
+        },
+        channel: {
+          type: Object,
+          readOnly: true,
+          notify: true
         }
       },
 
@@ -82,15 +87,25 @@
         req.onload = function () {
           var parser = new DOMParser();
           var xml = parser.parseFromString(this.responseText, 'text/xml');
-          var itemTags = xml.getElementsByTagName('item');
+          var channelTag = xml.getElementsByTagName('channel')[0];
           var items = [];
-          for (var i = 0; i < itemTags.length ; i += 1) {
-            var o = tree(itemTags[i]);
-            o.formattedPubDate = o.pubdate.toLocaleDateString();
-            items.push(o);
+          var channel = {};
+          for (var i = 0; i < channelTag.children.length; i += 1) {
+            var tag = channelTag.children[i];
+            var o = tree(tag);
+            if (tag.nodeName === 'item') {
+              o.formattedPubDate = o.pubdate.toLocaleDateString();
+              o.number = i + 1;
+              items.unshift(o);
+            } else {
+              var name = tag.nodeName.replace(/:/g, '_');
+              channel[name] = o;
+            }
           }
+          channel.subscribeLink = channel.atom_link['@href'].replace('http', 'itpc');
           self._setItems(items);
           self._setFirst(items[0]);
+          self._setChannel(channel);
         };
         req.open('get', 'http://podcasts.polyvox.audio/rss.xml');
         req.send();
