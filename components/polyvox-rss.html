@@ -95,7 +95,7 @@
             var o = tree(tag);
             if (tag.nodeName === 'item') {
               o.formattedPubDate = o.pubdate.toLocaleDateString();
-              o.number = i + 1;
+              o.number = items.length + 1;
               items.unshift(o);
             } else {
               var name = tag.nodeName.replace(/:/g, '_');

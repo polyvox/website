@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<dom-module id="polyvox-podcast-card">
+  <style>
+    .podcast-card {
+      background-color: white;
+      max-width: 640px;
+      min-width: 320px;
+      margin: auto;
+    }
+  </style>
+
+  <template>
+    <paper-material class="podcast-card">
+      {{ item }}
+    </paper-material>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'polyvox-podcast-card',
+
+      properties: {
+        item: {
+          type: Object
+        }
+      }
+    });
+  </script>
+</dom-module>

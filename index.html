@@ -21,6 +21,7 @@
     <link rel="import" href="./bower_components/iron-pages/iron-pages.html">
     <link rel="import" href="./components/polyvox-rss.html">
     <link rel="import" href="./components/polyvox-html.html">
+    <link rel="import" href="./components/polyvox-podcast-card.html">
     <style is="custom-style">
       html, body {
         height: 100%;
@@ -233,7 +234,7 @@
                     whenever she can. Her hobbies include scuba diving, bike
                     riding, writing, reading, and binge watching cable series.
                     She recently completed growing out her bangs. She loves
-                    dogs and has visits her favorite macaw, Peco, regularly.
+                    dogs and visits her favorite macaw, Peco, regularly.
                   </p>
                 </div>
               </paper-material>
@@ -244,23 +245,44 @@
                 <div class="flex who-card-about">
                   <h1>Bryan</h1>
                   <p>
-                    
+                    Bryan is a long time software developer. He absolutely
+                    loves creating things, but is terrible at finishing them.
+                    Luckily, he has surrounded himself with people who are
+                    amazing at finishing things, but terrible at creating
+                    them. It's a wonderfully healthy relationship. He has won
+                    the Nobel Prize twice and invented air multiple times.
+                    He's currently the Founder of Amazingness here at polyvox.
                   </p>
                 </div>
               </paper-material>
               <paper-material class="who-card layout horizontal">
                 <div class="orange self-stretch layout horizontal center-center">
-                  <iron-icon icon="social:mood-bad" class="who-icon orange"></iron-icon>
+                  <iron-icon icon="cloud-circle" class="who-icon orange"></iron-icon>
                 </div>
                 <div class="flex who-card-about">
                   <h1>Curtis</h1>
                   <p>
-                    
+                    During the first years of university, Curtis tutored other
+                    students in mathematics. They had a dedicated center for
+                    tutoring; his coworkers would often bring in snacks to
+                    share amongst themselves. One day, Curtis noticed a bag of
+                    caramel-covered popcorn cakes. He grabbed one out of the
+                    bag and started gnoshing on it as he walked to the WC. As
+                    he arrived to do his business, with the last bite in hand,
+                    he felt a tickle on his fingers. He looked down and saw
+                    the remainder of the popcorn cake covered in ants that,
+                    trying to escape his gaping maw, had abandoned the food
+                    source for his hand. He looked at the ants, at the last
+                    bite of popcorn cake, the ants, and popped the remaining
+                    bite into his mouth.
                   </p>
                 </div>
               </paper-material>
             </div>
             <div id="podcast-list">
+              <template is="dom-repeat" items="{{ items }}">
+                <polyvox-podcast-card item="{{ item }}"></polyvox-podcast-card>
+              </template>
             </div>
           </iron-pages>
         </paper-header-panel>
