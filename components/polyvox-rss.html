@@ -90,8 +90,14 @@
           var channelTag = xml.getElementsByTagName('channel')[0];
           var items = [];
           var channel = {};
-          for (var i = 0; i < channelTag.children.length; i += 1) {
-            var tag = channelTag.children[i];
+          var children = channelTag.children || channelTag.childNodes;
+          for (var i = 0; i < children.length; i += 1) {
+            var tag = children[i];
+
+            if (tag.nodeType === 3) {
+              continue;
+            }
+            
             var o = tree(tag);
             if (tag.nodeName === 'item') {
               o.formattedPubDate = o.pubdate.toLocaleDateString();
