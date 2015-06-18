@@ -75,10 +75,22 @@
         padding: 1em 4em;
       }
 
+      @media screen and (max-width: 640px) {
+        #start-page, #about, #podcast-list {
+          padding: 1em 1em;
+        }
+      }
+
+      @media screen and (max-width: 320px) {
+        #start-page, #about, #podcast-list {
+          padding: 0;
+        }
+      }
+
       #latest {
         background-color: white;
         max-width: 640px;
-        min-width: 320px;
+        min-width: 300px;
         margin: auto;
       }
 
@@ -121,6 +133,15 @@
       .who-icon {
         --iron-icon-width: 180px;
         --iron-icon-height: 180px;
+        transition: width 0.5s;
+        transition: height 0.5;
+      }
+
+      @media screen and (max-width: 800px) {
+        .who-icon {
+          width: 60px;
+          height: 60px;
+        }
       }
 
       .blue {
@@ -143,11 +164,18 @@
         margin: auto;
         margin-bottom: 2em;
         max-width: 640px;
-        min-width: 320px;
+        min-width: 300px;
       }
 
       .who-card-about {
         padding: 0.5em 1em;
+      }
+
+      polyvox-podcast-card {
+        max-width: 640px;
+        min-width: 300px;
+        margin: auto;
+        margin-bottom: 2em;
       }
 
       paper-item {
@@ -169,7 +197,7 @@
   </head>
   <body class="fullbleed" unresolved>
     <template is="dom-bind">
-      <paper-drawer-panel>
+      <paper-drawer-panel id="drawer-panel">
         <paper-header-panel class="drawer" mode="seamed" drawer>
           <div class="paper-header">
             <a href="./" id="home-link">
@@ -298,17 +326,21 @@
     </template>
     <script>
       window.addEventListener('WebComponentsReady', function () {
+        var drawerPanel = document.getElementById('drawer-panel');
         document.getElementById('home-link').addEventListener('click', function (e) {
           e.preventDefault();
           e.stopPropagation();
           document.getElementById('card-stack').selected = 0;
           document.getElementById('card-menu').select(null);
+          drawerPanel.closeDrawer();
         });
         document.getElementById('who-link').addEventListener('click', function (e) {
           document.getElementById('card-stack').selected = 1;
+          drawerPanel.closeDrawer();
         });
         document.getElementById('podcasts-link').addEventListener('click', function (e) {
           document.getElementById('card-stack').selected = 2;
+          drawerPanel.closeDrawer();
         });
       });
       document.body.addEventListener('click', function (e) {

@@ -1,5 +1,22 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <dom-module id="polyvox-html">
+  <style>
+    @media screen and (max-width: 640px) {
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
+      }
+
+      ul > li {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  </style>
+
+  <template></template>
+
   <script>
     Polymer({
       is: 'polyvox-html',
@@ -13,6 +30,14 @@
 
       _htmlChanged: function () {
         this.innerHTML = this.html;
+        var lists = this.getElementsByTagName('ul');
+        var items = this.getElementsByTagName('li');
+        for (var i = 0; i < lists.length; i += 1) {
+          lists[i].classList.add('polyvox-html');
+        }
+        for (var i = 0; i < items.length; i += 1) {
+          items[i].classList.add('polyvox-html');
+        }
       }
     });
   </script>
