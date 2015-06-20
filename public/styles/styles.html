@@ -1,0 +1,175 @@
+<style is="custom-style">
+  html, body {
+    height: 100%;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background-color: var(--paper-grey-300);
+  }
+
+  header, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .drawer {
+    background-color: var(--paper-grey-100);
+    border-right: 1px solid var(--paper-grey-400);
+  }
+
+  .drawer .paper-header {
+    padding: 1em;
+    border-bottom: 1px solid var(--paper-grey-300);
+    text-align: center;
+  }
+
+  .main .paper-header .title {
+    font-size: 38px;
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+  }
+
+  img.logo {
+    width: auto;
+    height: 100%;
+  }
+
+  .banner {
+    background-color: var(--paper-green-200);
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  #menu-button {
+    margin: 12px 0 0 12px;
+  }
+
+  #start-page, #about, #podcast-list {
+    padding: 1em 4em;
+  }
+
+  @media screen and (max-width: 640px) {
+    #start-page, #about, #podcast-list {
+      padding: 1em 1em;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    #start-page, #about, #podcast-list {
+      padding: 0;
+    }
+  }
+
+  #latest {
+    background-color: white;
+    max-width: 640px;
+    min-width: 300px;
+    margin: auto;
+  }
+
+  .poly-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-body {
+    padding: 0.5em 2em;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .latest-title {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .latest-subtitle {
+    margin-bottom: 1em;
+  }
+
+  .publication-date {
+    margin-top: 0;
+  }
+
+  .episode-number {
+    margin-bottom: 0;
+  }
+
+  .slightly-smaller {
+    --iron-icon-width: 18px;
+    --iron-icon-height: 18px;
+  }
+
+  .who-icon {
+    --iron-icon-width: 180px;
+    --iron-icon-height: 180px;
+    transition: width 0.5s;
+    transition: height 0.5;
+  }
+
+  @media screen and (max-width: 800px) {
+    .who-icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .blue {
+    background-color: var(--paper-blue-800);
+    color: white;
+  }
+
+  .red {
+    background-color: var(--paper-red-800);
+    color: white;
+  }
+
+  .orange {
+    background-color: var(--paper-orange-800);
+    color: white;
+  }
+
+  .who-card {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 2em;
+    max-width: 640px;
+    min-width: 300px;
+  }
+
+  .who-card-about {
+    padding: 0.5em 1em;
+  }
+
+  polyvox-podcast-card {
+    max-width: 640px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  paper-item {
+    cursor: pointer;
+  }
+
+  paper-button {
+    color: var(--paper-blue-800);
+  }
+
+  paper-menu {
+    --paper-menu-background-color: var(--paper-grey-100);
+  }
+
+  paper-toolbar {
+    --paper-toolbar-background: transparent;
+  }
+
+  a img {
+    border: 0;
+  }
+</style>
