@@ -1,30 +1,44 @@
 window.addEventListener('WebComponentsReady', function () {
-  if (location.hash) {
-    if (location.hash === '#who') {
-      document.getElementById('card-stack').selected = 1;
-    } else if (location.hash === '#podcasts') {
-      document.getElementById('card-stack').selected = 2;
+  var stack = document.getElementById('card-stack');
+  var menu = document.getElementById('card-menu');
+
+  function route(hash) {
+    if (hash === '#who') {
+      stack.selected = 1;
+      menu.select(0);
+    } else if (hash === '#podcasts') {
+      stack.selected = 2;
+      menu.select(1);
+    } else {
+      stack.selected = 0;
+      menu.select(null);
+      document.getElementById('home-link').focus();
     }
   }
+
+  window.onpopstate = function (state) {
+    route(state.target.location.hash);
+  }
+
+  route(location.hash);
 
   var drawerPanel = document.getElementById('drawer-panel');
   document.getElementById('home-link').addEventListener('click', function (e) {
     history.pushState(null, null, '/');
     e.preventDefault();
     e.stopPropagation();
-    document.getElementById('card-stack').selected = 0;
-    document.getElementById('card-menu').select(null);
     drawerPanel.closeDrawer();
+    route(location.hash);
   });
   document.getElementById('who-link').addEventListener('click', function (e) {
     history.pushState(null, null, '#who');
-    document.getElementById('card-stack').selected = 1;
     drawerPanel.closeDrawer();
+    route(location.hash);
   });
   document.getElementById('podcasts-link').addEventListener('click', function (e) {
     history.pushState(null, null, '#podcasts');
-    document.getElementById('card-stack').selected = 2;
     drawerPanel.closeDrawer();
+    route(location.hash);
   });
 });
 
