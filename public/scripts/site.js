@@ -40,6 +40,9 @@ window.addEventListener('WebComponentsReady', function () {
     drawerPanel.closeDrawer();
     route(location.hash);
   });
+  document.getElementById('pictures-link').addEventListener('click', function (e) {
+    location.href = 'mailto:pictures@polyvox.audio?subject=I have a pic!&body=This relates to podcast #??? <-- Put in the number here!';
+  });
 });
 
 document.body.addEventListener('click', function (e) {

@@ -46,6 +46,12 @@
                 <div secondary>listen to our conversations</div>
               </paper-item-body>
             </paper-item>
+            <paper-item id="pictures-link">
+              <paper-item-body two-line>
+                <div>email a pic!</div>
+                <div secondary>pics for podcasts</div>
+              </paper-item-body>
+            </paper-item>
           </paper-menu>
         </paper-header-panel>
         <paper-header-panel class="main" mode="waterfall" main>
