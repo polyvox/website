@@ -105,7 +105,9 @@ function generate() {
   });
 }
 
+// Just run it at noon.
 var rule = new schedule.RecurrenceRule();
+rule.hour = 12;
 rule.minute = 0;
 
 var job = schedule.scheduleJob(rule, generate);
