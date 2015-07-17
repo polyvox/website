@@ -81,6 +81,7 @@ function generate() {
       .then(function (template) {
         return new Ractive({
           template: template,
+          preserveWhitespace: true,
           data: data
         }).toHTML();
       });
