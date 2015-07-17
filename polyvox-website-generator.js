@@ -66,7 +66,7 @@ function generate() {
         channel[name] = o;
       }
     }
-    channel.subscribeLink = channel.atom_link['@href'].replace('http', 'itpc');
+    channel.subscribeLink = channel.atom_link['@href'].replace('http', 'feed');
 
     return {
       items: items,
