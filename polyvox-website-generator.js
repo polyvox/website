@@ -113,6 +113,10 @@ rule.minute = 0;
 var job = schedule.scheduleJob(rule, generate);
 generate();
 
+if (process.env['NO_JOB']) {
+  job.cancel();
+}
+
 /**********************************/
 /*** Some happy helper methods. ***/
 
