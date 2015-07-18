@@ -1,6 +1,7 @@
 window.addEventListener('WebComponentsReady', function () {
   var stack = document.getElementById('card-stack');
   var menu = document.getElementById('card-menu');
+  var drawerPanel = document.getElementById('drawer-panel');
 
   function route(hash) {
     if (hash === '#who') {
@@ -36,7 +37,7 @@ window.addEventListener('WebComponentsReady', function () {
     }, 0);
   }
 
-  var drawerPanel = document.getElementById('drawer-panel');
+  drawerPanel.responsiveWidth = '800px';
   document.getElementById('home-link').addEventListener('click', function (e) {
     e.preventDefault();
   });

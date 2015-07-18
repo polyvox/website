@@ -24,6 +24,11 @@
     text-align: center;
   }
 
+  .main .paper-header {
+    background-color: white;
+    border-bottom: 1px solid var(--paper-grey-300);
+  }
+
   .main .paper-header .title {
     font-size: 38px;
     font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
@@ -43,16 +48,16 @@
   }
 
   #menu-button {
-    margin: 12px 0 0 12px;
+    margin: 12px 0 12px 12px;
   }
 
   #start-page, #about, #podcast-list {
-    padding: 1em 4em;
+    /*padding: 1em 4em;*/
   }
 
   @media screen and (max-width: 640px) {
     #start-page, #about, #podcast-list {
-      padding: 1em 1em;
+      /*padding: 1em 1em;*/
     }
   }
 
@@ -146,9 +151,7 @@
     padding: 0.5em 1em;
   }
 
-  polyvox-podcast-card {
-    max-width: 640px;
-    min-width: 300px;
+  .polyvox-podcast-card {
     margin: auto;
     margin-bottom: 2em;
   }

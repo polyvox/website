@@ -60,6 +60,7 @@ function generate() {
       if (tag.nodeName === 'item') {
         o.formattedPubDate = o.pubdate.toLocaleDateString();
         o.number = items.length + 1;
+        o.detailsLink = '/podcasts/' + o.number;
         items.unshift(o);
       } else {
         var name = tag.nodeName.replace(/:/g, '_');
