@@ -154,7 +154,14 @@
             </div>
             <div id="podcast-list">
               {{#items}}
-                <polyvox-podcast-card class="polyvox-podcast-card" item="{{ JSON.stringify(this) }}"></polyvox-podcast-card>
+                <polyvox-podcast-card
+                  class="polyvox-podcast-card"
+                  imageHref="{{ this.itunes_image['@href'] }}"
+                  number="{{ this.number }}"
+                  title="{{ this.title }}"
+                  pubDate="{{ this.formattedPubDate }}"
+                  description="{{ this.description }}"
+                  audioLink="{{ this.enclosure['@url'] }}"></polyvox-podcast-card>
               {{/items}}
             </div>
             <div></div>

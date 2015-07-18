@@ -84,20 +84,20 @@
     <paper-material class="podcast-card">
       <div class="header">
         <div class="image-and-links">
-          <img class="item-image" src="[[ item.itunes_image.@href ]]">
+          <img class="item-image" src="[[ imagehref ]]">
         </div>
         <div class="item-content flex">
-          <h3 class="episode-number">Episode #<span>[[ item.number ]]</span></h3>
-          <h1 class="item-title">[[ item.title ]]</h1>
-          <h2 class="publication-date">[[ item.formattedPubDate ]]</h2>
+          <h3 class="episode-number">Episode #<span>[[ number ]]</span></h3>
+          <h1 class="item-title">[[ title ]]</h1>
+          <h2 class="publication-date">[[ pubdate ]]</h2>
           <div class="item-description">
-            <div class="item-subtitle">[[ item.description ]]</div>
+            <div class="item-subtitle">[[ description ]]</div>
           </div>
         </div>
       </div>
       <div class="links">
         <paper-button id="listen-to-me">Listen</paper-button>
-        <div class="hidden">[[ item.enclosure.@url ]]</div>
+        <div class="hidden">[[ audiolink ]]</div>
         <!-- <paper-button id="listen-to-me">Details &amp; Discuss</paper-button>
         <div class="hidden">[[ item.detailsLink ]]</div> -->
       </div>
@@ -109,8 +109,28 @@
       is: 'polyvox-podcast-card',
 
       properties: {
-        item: {
-          type: Object,
+        imagehref: {
+          type: String,
+          notify: true
+        },
+        number: {
+          type: String,
+          notify: true,
+        },
+        title: {
+          type: String,
+          notify: true,
+        },
+        pubdate: {
+          type: String,
+          notify: true
+        },
+        description: {
+          type: String,
+          notify: true
+        },
+        audiolink: {
+          type: String,
           notify: true
         }
       },
