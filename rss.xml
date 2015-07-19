@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+    <channel>
+        <title><![CDATA[polyvox]]></title>
+        <description><![CDATA[An unscripted and irreverent conversation between three or more folks that work in IT but would rather create content for you to enjoy.]]></description>
+        <link>http://polyvox.audio</link>
+        <image>
+            <url>http://podcasts.polyvox.audio/polyvox.green.512.png</url>
+            <title>polyvox</title>
+            <link>http://polyvox.audio</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 19 Jul 2015 03:00:00 GMT</lastBuildDate>
+        <atom:link href="http://podcasts.polyvox.audio/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[2015 by polyvox]]></copyright>
+        <language><![CDATA[en]]></language>
+        <managingEditor><![CDATA[editor@polyvox.audio]]></managingEditor>
+        <webMaster><![CDATA[webmaster@polyvox.audio]]></webMaster>
+        <ttl>1800</ttl>
+        <category><![CDATA[Society and Culture]]></category>
+        <category><![CDATA[Technology]]></category>
+        <itunes:subtitle></itunes:subtitle>
+        <itunes:summary>An unscripted and irreverent conversation between three or more folks that work in IT but would rather create content for you to enjoy.</itunes:summary>
+        <itunes:author>Heather, Bryan, and Curtis</itunes:author>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>polyvox administrator</itunes:name>
+            <itunes:email>admin@polyvox.audio</itunes:email>
+        </itunes:owner>
+        <itunes:image href="http://podcasts.polyvox.audio/polyvox.green.3000.png"/>
+        <itunes:category text="Society &amp; Culture"/>
+        <itunes:category text="Technology"/>
+        <item>
+            <title><![CDATA[Beefsteak Handshake]]></title>
+            <description><![CDATA[In our inaugural podcast, we start with the underhandedness of SourceForge and conclude with vending machines in public restrooms.]]></description>
+            <link>http://polyvox.audio/#podcasts</link>
+            <guid isPermaLink="false">2CA119D7-1A5D-4CBE-BE5D-06A001B53B52</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 17 Jun 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0001/01%20Beefsteak%20Handshake.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Greeting one another and the Internet with an inaugural podcast.</itunes:subtitle>
+            <itunes:summary><![CDATA[What did we talk about?<ul><li>The recent underhandedness of SourceForge.net and how it relates to Pulp Fiction</li><li>Bryan's new Apple Watch</li><li>Starbuck's, banks, Amazon, and all of the other Big Brothers</li><li>Blackpowder, gunpowder and shooting stuff</li><li>Bryan's upcoming birthday</li><li>Keanu Reeves and Shia LeBouf</li><li>Using smartphones for their smart and not their phone</li><li>Long-format writing</li><li>Gonzo journalism</li><li>Our first vinyl records, cassette tapes, and CDs</li><li><a href="http://www.youtube.com/watch?v=2pv4xmZF_EI">Underdog</a></li><li>The mysteries of mattresses and pillows</li><li>Vending machines in public restrooms</li><li>The <a href="https://en.wikipedia.org/wiki/Half_cent_(United_States_coin)">Ha' penny</a></ul><p>And, a listener submitted photo!</p><p><img src="http://podcasts.polyvox.audio/media/0001/peccadillo.jpg" class="poly-img"></p>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0001/polyvox.episode1.3000.png"/>
+            <itunes:duration>1:49:24</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Bryan Has a Birthday]]></title>
+            <description><![CDATA[The sequel to the first episode!]]></description>
+            <link>http://polyvox.audio/#podcasts</link>
+            <guid isPermaLink="false">97B1E26E-46C2-456B-87D2-EC140EE2DC8A</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 01 Jul 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0002/02%20Bryan%20Has%20a%20Birthday.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Happiness is having a rare steak, a bottle of scotch, and a dog to eat the rare steak.</itunes:subtitle>
+            <itunes:summary><![CDATA[Another couple of hours of pure, ignorant bliss filled by...<ul><li>Heather learns about advanced microphone setup</li><li>Getting used to our voices</li><li>Bryan admires <a href="http://shirt.woot.com/offers/nerd-happens">Curtis' T-shirt</a> (which you can't see!)</li><li>Biomimetics as a science, an art, and a company name</li><li>Let's <a href="https://www.youtube.com/watch?v=wFyY2mK8pxk">pluralize octopus</a>!</li><li><i>COUGH!</i></li><li>Heather presents NOT THE NEWS</li><li>Revisit the meaning of "NOT THE NEWS" with the <a href="https://en.wikipedia.org/wiki/2015_Texas_pool_party_incident">2015 Texas pool party incident</a> as the example</li><li>Civil disobedience: structured vs. unstructured</li><li>More sight gags that <a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Tab_3_7.0#Special_editions">you can't see</a>!</li><li><a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_Edge">Samsung Galaxy Note Edge</a></li><li>Heather's and Curtis' life advice for Bryan on his birthday</li><li>Sleeping gear</li><li>Dave Chappelle making history</li></ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0002/polyvox.episode2.3000.png"/>
+            <itunes:duration>1:55:27</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[What if We Had a Sponsor?]]></title>
+            <description><![CDATA[Filmed in TECHNICOLOR (TM)]]></description>
+            <link>http://polyvox.audio/#podcasts</link>
+            <guid isPermaLink="false">A532D6A4-C1D5-43AF-811A-83F6F273C3FF</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 15 Jul 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0003/03%20What%20if%20We%20Had%20a%20Sponsor.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>No, wait! We&apos;re not corporate sell-outs!</itunes:subtitle>
+            <itunes:summary><![CDATA[Give me liberty or give me...<ul><li>Who would we want as our sponsor?<ul><li><a href="http://www.budlight.com/our-beers/lime-beer.html">Budlight Lime</a> (probably not)</li><li><a href="http://www.iamjohnoliver.com">John Oliver</a></li><li><a href="http://www.hollowdeckpress.com">Hollowdeck Press</a></li><li><a href="http://www.halliburton.com/en-US/default.page">Halliburton</a></li><li><a href="https://www.canada.travel">formerly the Canadian Tourism Commission</a></li><li>Happy Madison Productions</li><li><a href="http://www.trump.com">Donald Trump</a></li><li><a href="http://www.audible.com">Audible</a></li><li><a href="http://www.spanx.com">SPANX</a></li><li><a href="http://www.gatorade.com">Gatorade</a></li><li><a href="http://www.ettore.com">Ettore</a></li><li><a href="http://www.jbropesupply.com">J. B. Rope Supply</a></li><li><a href="http://skylineservicesinc.net">Skyline High Rise Services</a></li><li>Chris Pratt, PLEASE!</li></ul></li><li>Short pants</li><li><a href="http://seaworldparks.com">SeaWorld</a></li><li>Drew and Adam</li><li>Amazon Prime fails Bryan</li><li>Follow-up on the purity of the Weather Channel's line-up</li><li>The redemption of Brian Williams</li><li>¡Fireworks!</li><li>The Myth of Mythbusters</li><li>Undergarments</li><li>Follow-up on Heather's story-for-a-house</li><li>The Sinking of the RMS Lusitania</li><li>SKINNY JEANS WARNING!</li><li><i>This Is Where I Leave You</i></li><li>Curtis got a haircut</li><li>Little kid English</li><li>Steinbeck</li><li>Sky-scraper window washers</li><li>Sensory deprivation booths</li><li>Mani/pedi salon experiences</li><li>Fireworks</li><li>Jurassic World</li><li><a href="https://www.youtube.com/watch?v=hRUy-D0JU2I">Miguel Rivera playing Beat It</a></li></ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0003/polyvox.episode3.1000.png"/>
+            <itunes:duration>1:33:11</itunes:duration>
+        </item>
+    </channel>
+</rss>

@@ -84,6 +84,12 @@
                       </paper-button>
                       <div class="hidden">{{ channel.subscribeLink }}</div>
                     </div>
+                    <div class="flex text-center">
+                      <paper-button>
+                        Details &amp; Discuss
+                      </paper-button>
+                      <div class="hidden">{{ items[0].detailsLink }}</div>
+                    </div>
                     <div class="flex text-right">
                       <paper-button>
                          iTunes
@@ -156,12 +162,13 @@
               {{#items}}
                 <polyvox-podcast-card
                   class="polyvox-podcast-card"
-                  imageHref="{{ this.itunes_image['@href'] }}"
+                  imagehref="{{ this.itunes_image['@href'] }}"
                   number="{{ this.number }}"
-                  title="{{ this.title }}"
-                  pubDate="{{ this.formattedPubDate }}"
+                  cardtitle="{{ this.title }}"
+                  pubdate="{{ this.formattedPubDate }}"
                   description="{{ this.description }}"
-                  audioLink="{{ this.enclosure['@url'] }}"></polyvox-podcast-card>
+                  audiolink="{{ this.enclosure['@url'] }}"
+                  detailslink="{{ this.detailsLink }}"></polyvox-podcast-card>
               {{/items}}
             </div>
             <div></div>

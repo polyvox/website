@@ -88,7 +88,7 @@
         </div>
         <div class="item-content flex">
           <h3 class="episode-number">Episode #<span>[[ number ]]</span></h3>
-          <h1 class="item-title">[[ title ]]</h1>
+          <h1 class="item-title">[[ cardtitle ]]</h1>
           <h2 class="publication-date">[[ pubdate ]]</h2>
           <div class="item-description">
             <div class="item-subtitle">[[ description ]]</div>
@@ -98,8 +98,8 @@
       <div class="links">
         <paper-button id="listen-to-me">Listen</paper-button>
         <div class="hidden">[[ audiolink ]]</div>
-        <!-- <paper-button id="listen-to-me">Details &amp; Discuss</paper-button>
-        <div class="hidden">[[ item.detailsLink ]]</div> -->
+        <paper-button id="listen-to-me">Details &amp; Discuss</paper-button>
+        <div class="hidden">[[ detailslink ]]</div>
       </div>
     </paper-material>
   </template>
@@ -117,7 +117,7 @@
           type: String,
           notify: true,
         },
-        title: {
+        cardtitle: {
           type: String,
           notify: true,
         },
@@ -130,6 +130,10 @@
           notify: true
         },
         audiolink: {
+          type: String,
+          notify: true
+        },
+        detailslink: {
           type: String,
           notify: true
         }
