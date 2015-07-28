@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="polyvox.svg"
-   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode3.1000.png"
+   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode4.1000.png"
    inkscape:export-xdpi="514.28998"
    inkscape:export-ydpi="514.28998">
   <defs
@@ -52,18 +52,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.4140969"
-     inkscape:cx="8.1354759"
-     inkscape:cy="50.723759"
+     inkscape:zoom="3.8421053"
+     inkscape:cx="76"
+     inkscape:cy="47.5"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="2560"
-     inkscape:window-height="1391"
+     inkscape:window-width="1920"
+     inkscape:window-height="1151"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -99,7 +99,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="sponsors - episode 3"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     style="display:none">
     <g
        id="g5109"
        transform="matrix(0.08625632,0,0,0.08625632,14.738739,82.550291)">
@@ -107,12 +108,12 @@
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;opacity:0;fill:#ffffff;fill-rule:evenodd"
          id="polygon4"
-         points="0,0 500,0 500,63.158203 0,63.158203 0,0 " />
+         points="500,63.158203 0,63.158203 0,0 0,0 500,0 " />
       <polygon
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon6"
-         points="49.699219,47.859375 59.579102,47.859375 59.579102,15.400391 49.699219,15.400391 49.699219,26.991699 28.73291,26.991699 28.73291,15.400391 18.752441,15.400391 18.752441,47.859375 18.752441,47.859375 28.73291,47.859375 28.73291,35.55957 49.699219,35.55957 " />
+         points="59.579102,15.400391 49.699219,15.400391 49.699219,26.991699 28.73291,26.991699 28.73291,15.400391 18.752441,15.400391 18.752441,47.859375 18.752441,47.859375 28.73291,47.859375 28.73291,35.55957 49.699219,35.55957 49.699219,47.859375 59.579102,47.859375 " />
       <path
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          inkscape:connector-curvature="0"
@@ -122,17 +123,17 @@
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon10"
-         points="147.37988,39.492188 125.00146,39.492188 125.00146,15.400391 115.02246,15.400391 115.02246,47.859375 115.02246,47.859375 147.37988,47.859375 " />
+         points="125.00146,15.400391 115.02246,15.400391 115.02246,47.859375 115.02246,47.859375 147.37988,47.859375 147.37988,39.492188 125.00146,39.492188 " />
       <polygon
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon12"
-         points="183.87109,39.492188 161.49268,39.492188 161.49268,15.400391 151.51367,15.400391 151.51367,47.859375 151.51367,47.859375 183.87109,47.859375 " />
+         points="161.49268,15.400391 151.51367,15.400391 151.51367,47.859375 151.51367,47.859375 183.87109,47.859375 183.87109,39.492188 161.49268,39.492188 " />
       <polygon
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon14"
-         points="188.61035,47.859375 198.58936,47.859375 198.58936,15.400391 188.61035,15.400391 188.61035,47.859375 " />
+         points="198.58936,15.400391 188.61035,15.400391 188.61035,47.859375 188.61035,47.859375 198.58936,47.859375 " />
       <path
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          inkscape:connector-curvature="0"
@@ -152,7 +153,7 @@
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon22"
-         points="368.9502,47.859375 368.9502,23.463379 382.96191,23.463379 382.96191,15.400391 345.05762,15.400391 345.05762,23.463379 345.05762,23.463379 358.97168,23.463379 358.97168,47.859375 " />
+         points="382.96191,23.463379 382.96191,15.400391 345.05762,15.400391 345.05762,23.463379 345.05762,23.463379 358.97168,23.463379 358.97168,47.859375 368.9502,47.859375 368.9502,23.463379 " />
       <path
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          inkscape:connector-curvature="0"
@@ -162,7 +163,7 @@
          transform="matrix(2.75,0,0,2.75,-51.947164,-42.04077)"
          style="clip-rule:evenodd;fill:#ed171f;fill-rule:evenodd"
          id="polygon26"
-         points="465.8252,47.859375 481.24707,47.859375 481.24707,15.400391 471.26855,15.400391 471.26855,38.988281 471.16602,38.988281 452.51855,15.400391 437.09375,15.400391 437.09375,47.859375 437.09375,47.859375 447.0752,47.859375 447.0752,24.270508 447.17578,24.270508 " />
+         points="481.24707,15.400391 471.26855,15.400391 471.26855,38.988281 471.16602,38.988281 452.51855,15.400391 437.09375,15.400391 437.09375,47.859375 437.09375,47.859375 447.0752,47.859375 447.0752,24.270508 447.17578,24.270508 465.8252,47.859375 481.24707,47.859375 " />
     </g>
     <g
        id="g5289"
@@ -335,30 +336,30 @@
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/bud-light.png"
        xlink:href="bud-light.png"
-       y="-32.870659"
-       x="88.85099"
-       id="image4280"
-       preserveAspectRatio="none"
+       width="68.2481"
        height="49.173634"
-       width="68.2481" />
+       preserveAspectRatio="none"
+       id="image4280"
+       x="88.85099"
+       y="-32.870659" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/donald-trump.png"
        xlink:href="donald-trump.png"
-       width="22.049389"
-       height="31.849115"
-       preserveAspectRatio="none"
-       id="image4280-3"
+       y="70.654076"
        x="-15.839851"
-       y="70.654076" />
+       id="image4280-3"
+       preserveAspectRatio="none"
+       height="31.849115"
+       width="22.049389" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/john-oliver.png"
        xlink:href="john-oliver.png"
-       width="39.898891"
-       height="33.074081"
-       preserveAspectRatio="none"
-       id="image4345"
+       y="69.429108"
        x="118.76099"
-       y="69.429108" />
+       id="image4345"
+       preserveAspectRatio="none"
+       height="33.074081"
+       width="39.898891" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -443,6 +444,29 @@
          x="80.768417"
          id="tspan5513"
          sodipodi:role="line">SCOTCH</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="hana - episode 4"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/Users/curtis/dev/polyvox/website/public/hana.jpg"
+       xlink:href="hana.jpg"
+       width="175"
+       height="175"
+       preserveAspectRatio="none"
+       id="image4346"
+       x="-15.839851"
+       y="-72.496811" />
+    <rect
+       style="fill:#000000;fill-opacity:0.49803922;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0"
+       id="rect4349"
+       width="175"
+       height="175"
+       x="-15.839851"
+       y="-72.496811" />
   </g>
   <g
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Righteous;-inkscape-font-specification:'Righteous, Normal';text-align:left;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
