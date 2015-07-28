@@ -13,6 +13,20 @@ Ractive.DEBUG = false;
 function generate() {
   // Get the RSS feed.
   new Promise(function (good, bad) {
+    if (process.env['NO_JOB']) {
+      console.info('using local rss.xml');
+      var p = path.join(__dirname, 'rss.xml');
+      return fs.readFile(p, 'utf8', function (e, content) {
+        if (e) {
+          return bad(e);
+        }
+        good({
+          lastModified: new Date(),
+          content: content
+        });
+      });
+    }
+
     var body = [];
     var request = http.get('http://podcasts.polyvox.audio/rss.xml');
     request.on('response', function (m) {
@@ -60,13 +74,15 @@ function generate() {
       if (tag.nodeName === 'item') {
         o.formattedPubDate = o.pubdate.toLocaleDateString();
         o.number = items.length + 1;
+        o.detailsLink = '/podcasts/' + o.number + '.html';
+        o.podcastTitle = 'Episode #' + o.number + ' - ' + o.title;
         items.unshift(o);
       } else {
         var name = tag.nodeName.replace(/:/g, '_');
         channel[name] = o;
       }
     }
-    channel.subscribeLink = channel.atom_link['@href'].replace('http', 'itpc');
+    channel.subscribeLink = channel.atom_link['@href'].replace('http', 'feed');
 
     return {
       items: items,
@@ -74,22 +90,49 @@ function generate() {
     };
   })
 
-  // Generate with ractive.
+  // Get the templates
   .then(function (data) {
-    var p = path.join(__dirname, 'templates', 'index.html.ractive');
-    return Promise.promisify(fs.readFile)(p, 'utf8')
-      .then(function (template) {
-        return new Ractive({
-          template: template,
-          data: data
-        }).toHTML();
-      });
+    var m = path.join(__dirname, 'templates', 'index.html.ractive');
+    var p = path.join(__dirname, 'templates', 'podcast.html.ractive');
+    return Promise.props({
+      data: data,
+      main: Promise.promisify(fs.readFile)(m, 'utf8'),
+      podcast: Promise.promisify(fs.readFile)(p, 'utf8'),
+    });
   })
 
-  // Save to index.html
-  .then(function (html) {
-    var p = path.join(__dirname, 'public', 'index.html');
-    return Promise.promisify(fs.writeFile)(p, html);
+  // Generate with ractive.
+  .then(function (result) {
+    var htmls = {
+      main: new Ractive({
+              template: result.main,
+              preserveWhitespace: true,
+              data: result.data
+            }).toHTML(),
+      items: []
+    }
+    for (var i = 0; i < result.data.items.length; i += 1) {
+      var item = result.data.items[i];
+      htmls.items.push(new Ractive({
+        template: result.podcast,
+        preserveWhitespace: true,
+        data: item
+      }).toHTML());
+    }
+    return htmls;
+  })
+
+  // Save the html files
+  .then(function (htmls) {
+    var m = path.join(__dirname, 'public', 'index.html');
+    var a = [ Promise.promisify(fs.writeFile)(m, htmls.main) ];
+    var l = htmls.items.length;
+    for (var i = 0; i < htmls.items.length; i += 1) {
+      var item = htmls.items[i];
+      var p = path.join(__dirname, 'public', 'podcasts', (l - i) + '.html');
+      a.push(Promise.promisify(fs.writeFile)(p, item));
+    }
+    return Promise.all(a);
   })
 
   // Ignore on ignore :)

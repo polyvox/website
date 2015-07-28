@@ -13,6 +13,11 @@
         padding-left: 0;
       }
     }
+
+    .poly-img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 
   <template></template>
@@ -30,13 +35,9 @@
 
       _htmlChanged: function () {
         this.innerHTML = this.html;
-        var lists = this.getElementsByTagName('ul');
-        var items = this.getElementsByTagName('li');
+        var lists = this.querySelectorAll('*');
         for (var i = 0; i < lists.length; i += 1) {
           lists[i].classList.add('polyvox-html');
-        }
-        for (var i = 0; i < items.length; i += 1) {
-          items[i].classList.add('polyvox-html');
         }
       }
     });

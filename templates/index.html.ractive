@@ -3,6 +3,7 @@
   <head>
     <title>polyvox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <script src="./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -56,7 +57,7 @@
           </paper-menu>
         </paper-header-panel>
         <paper-header-panel class="main" mode="waterfall" main>
-          <div>
+          <div class="paper-header">
             <paper-icon-button id="menu-button" class="layout" icon="menu" paper-drawer-toggle></paper-icon-button>
           </div>
           <iron-pages id="card-stack" selected="3">
@@ -69,25 +70,33 @@
                   <h1 class="latest-title">{{ items[0].title }}</h1>
                   <h2 class="publication-date">{{ items[0].formattedPubDate }}</h2>
                   <div class="latest-subtitle">{{ items[0].description }}</div>
-                  <div class="layout horizontal end-justified">
-                    <paper-button>
-                      <iron-icon icon="hardware:cast" class="slightly-smaller"></iron-icon>
-                      Listen to this podcast
-                    </paper-button>
-                    <div class="hidden">{{ items[0].enclosure['@url'] }}</div>
-                  </div>
-                  <div class="layout horizontal end-justified">
-                    <paper-button>
-                      <iron-icon icon="hardware:cast-connected" class="slightly-smaller"></iron-icon>
-                      Subscribe to the podcast
-                    </paper-button>
-                    <div class="hidden">{{ channel.subscribeLink }}</div>
-                  </div>
-                  <div class="layout horizontal end-justified">
-                    <paper-button>
-                      Subscribe from iTunes
-                    </paper-button>
-                    <div class="hidden">https://itunes.apple.com/us/podcast/polyvox/id1007515263</div>
+                  <div class="layout horizontal">
+                    <div class="flex text-left">
+                      <paper-button>
+                        <iron-icon icon="hardware:cast" class="slightly-smaller"></iron-icon>
+                        Listen
+                      </paper-button>
+                      <div class="hidden">{{ items[0].enclosure['@url'] }}</div>
+                    </div>
+                    <div class="flex text-center">
+                      <paper-button>
+                        <iron-icon icon="hardware:cast-connected" class="slightly-smaller"></iron-icon>
+                        Subscribe
+                      </paper-button>
+                      <div class="hidden">{{ channel.subscribeLink }}</div>
+                    </div>
+                    <div class="flex text-center">
+                      <paper-button>
+                        Details &amp; Discuss
+                      </paper-button>
+                      <div class="hidden">{{ items[0].detailsLink }}</div>
+                    </div>
+                    <div class="flex text-right">
+                      <paper-button>
+                         iTunes
+                      </paper-button>
+                      <div class="hidden">https://itunes.apple.com/us/podcast/polyvox/id1007515263</div>
+                    </div>
                   </div>
                 </div>
               </paper-material>
@@ -152,7 +161,15 @@
             </div>
             <div id="podcast-list">
               {{#items}}
-                <polyvox-podcast-card item="{{ JSON.stringify(this) }}"></polyvox-podcast-card>
+                <polyvox-podcast-card
+                  class="polyvox-podcast-card"
+                  imagehref="{{ this.itunes_image['@href'] }}"
+                  number="{{ this.number }}"
+                  cardtitle="{{ this.title }}"
+                  pubdate="{{ this.formattedPubDate }}"
+                  description="{{ this.description }}"
+                  audiolink="{{ this.enclosure['@url'] }}"
+                  detailslink="{{ this.detailsLink }}"></polyvox-podcast-card>
               {{/items}}
             </div>
             <div></div>

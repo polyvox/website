@@ -1,6 +1,7 @@
 window.addEventListener('WebComponentsReady', function () {
   var stack = document.getElementById('card-stack');
   var menu = document.getElementById('card-menu');
+  var drawerPanel = document.getElementById('drawer-panel');
 
   function route(hash) {
     if (hash === '#who') {
@@ -22,27 +23,40 @@ window.addEventListener('WebComponentsReady', function () {
 
   route(location.hash);
 
-  var drawerPanel = document.getElementById('drawer-panel');
+  function transition(hash) {
+    return function (e) {
+      history.pushState(null, null, hash);
+      drawerPanel.closeDrawer();
+      route(hash);
+    }
+  }
+
+  function mail() {
+    setTimeout(function () {
+      location.href = 'mailto:pictures@polyvox.audio?subject=I have a pic!&body=This relates to podcast #??? <-- Put in the number here!';
+    }, 0);
+  }
+
+  drawerPanel.responsiveWidth = '800px';
   document.getElementById('home-link').addEventListener('click', function (e) {
+    e.preventDefault();
+  });
+  document.getElementById('home-link').addEventListener('tap', function (e) {
     history.pushState(null, null, '/');
     e.preventDefault();
     e.stopPropagation();
     drawerPanel.closeDrawer();
     route(location.hash);
   });
-  document.getElementById('who-link').addEventListener('click', function (e) {
-    history.pushState(null, null, '#who');
-    drawerPanel.closeDrawer();
-    route(location.hash);
-  });
-  document.getElementById('podcasts-link').addEventListener('click', function (e) {
-    history.pushState(null, null, '#podcasts');
-    drawerPanel.closeDrawer();
-    route(location.hash);
-  });
-  document.getElementById('pictures-link').addEventListener('click', function (e) {
-    location.href = 'mailto:pictures@polyvox.audio?subject=I have a pic!&body=This relates to podcast #??? <-- Put in the number here!';
-  });
+
+  document.getElementById('who-link').addEventListener('mouseup', transition('#who'));
+  document.getElementById('who-link').addEventListener('touchend', transition('#who'));
+
+  document.getElementById('podcasts-link').addEventListener('mouseup', transition('#podcasts'));
+  document.getElementById('podcasts-link').addEventListener('touchend', transition('#podcasts'));
+
+  document.getElementById('pictures-link').addEventListener('mouseup', mail);
+  document.getElementById('pictures-link').addEventListener('touchend', mail);
 });
 
 document.body.addEventListener('click', function (e) {
