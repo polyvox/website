@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="polyvox.svg"
-   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode4.1000.png"
+   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode5.1000.png"
    inkscape:export-xdpi="514.28998"
    inkscape:export-ydpi="514.28998">
   <defs
@@ -53,17 +53,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.8421053"
-     inkscape:cx="76"
-     inkscape:cy="47.5"
+     inkscape:cx="25.246576"
+     inkscape:cy="65.719178"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1151"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -336,30 +336,30 @@
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/bud-light.png"
        xlink:href="bud-light.png"
-       width="68.2481"
-       height="49.173634"
-       preserveAspectRatio="none"
-       id="image4280"
+       y="-32.870659"
        x="88.85099"
-       y="-32.870659" />
+       id="image4280"
+       preserveAspectRatio="none"
+       height="49.173634"
+       width="68.2481" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/donald-trump.png"
        xlink:href="donald-trump.png"
-       y="70.654076"
-       x="-15.839851"
-       id="image4280-3"
-       preserveAspectRatio="none"
+       width="22.049389"
        height="31.849115"
-       width="22.049389" />
+       preserveAspectRatio="none"
+       id="image4280-3"
+       x="-15.839851"
+       y="70.654076" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/john-oliver.png"
        xlink:href="john-oliver.png"
-       y="69.429108"
-       x="118.76099"
-       id="image4345"
-       preserveAspectRatio="none"
+       width="39.898891"
        height="33.074081"
-       width="39.898891" />
+       preserveAspectRatio="none"
+       id="image4345"
+       x="118.76099"
+       y="69.429108" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -454,12 +454,12 @@
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/hana.jpg"
        xlink:href="hana.jpg"
-       width="175"
-       height="175"
-       preserveAspectRatio="none"
-       id="image4346"
+       y="-72.496811"
        x="-15.839851"
-       y="-72.496811" />
+       id="image4346"
+       preserveAspectRatio="none"
+       height="175"
+       width="175" />
     <rect
        style="fill:#000000;fill-opacity:0.49803922;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0"
        id="rect4349"
@@ -467,6 +467,17 @@
        height="175"
        x="-15.839851"
        y="-72.496811" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="special-guest-5"
+     sodipodi:insensitive="true">
+    <path
+       style="fill:#1b5e20;fill-opacity:1"
+       d="m 10.686139,100.70591 c 0,-1.654045 1.030219,-30.711323 1.266991,-35.735367 l 0.105055,-2.229157 -1.350501,-1.018809 C 8.776172,60.265451 -3.489408,48.128427 -3.489408,47.674282 c 0,-0.208777 -0.182027,-0.485871 -0.404509,-0.615767 -0.471493,-0.275272 -1.958078,-3.321676 -1.958078,-4.012608 0,-0.258991 -0.114399,-0.541594 -0.254209,-0.628006 -0.139809,-0.0864 -0.49055,-1.626143 -0.779424,-3.421637 -0.288873,-1.795487 -0.639622,-3.335226 -0.779431,-3.421638 -0.139817,-0.08641 -0.254209,-0.73945 -0.254209,-1.451202 0,-0.711759 -0.112451,-1.363606 -0.249899,-1.448544 -0.137447,-0.08495 -0.342449,-2.988838 -0.455552,-6.453093 -0.113118,-3.464255 -0.416866,-7.55559 -0.675006,-9.091857 -0.258139,-1.536258 -0.530369,-4.155386 -0.604957,-5.820274 -0.09049,-2.0199686 -0.249484,-3.0270726 -0.477889,-3.02708 -0.304408,-7.4e-6 -1.488163,-1.3037741 -2.072337,-2.2824246 -0.119626,-0.2004035 0.04998,-0.7292253 0.378876,-1.1812974 0.327501,-0.4501545 1.270856,-2.6125606 2.096348,-4.80533767 2.226451,-5.91423093 2.510586,-6.30619793 7.385787,-10.18867433 5.890273,-4.690858 6.880947,-6.232225 9.110937,-14.175547 2.777906,-9.895 3.996927,-15.674383 4.765289,-22.592276 0.3856,-3.471711 0.932065,-5.053215 2.628717,-7.607566 2.181552,-3.284397 5.523642,-5.616303 9.63188,-6.720547 0.968959,-0.260442 3.954524,-0.621882 6.634594,-0.803206 l 4.87284,-0.329662 2.02638,0.968848 c 2.287585,1.093738 4.08234,2.754576 6.231358,5.766389 2.745068,3.847181 2.583228,2.917345 2.315472,13.303269 -0.129816,5.035268 -0.219313,9.753069 -0.198892,10.483997 0.0449,1.606722 1.601394,8.431766 2.390946,10.483994 1.23322,3.205419 4.336205,6.947871 7.390598,8.913643 1.416329,0.91154 1.55003,1.092864 1.545588,2.096244 -0.003,0.6390154 -0.306969,1.5924404 -0.727234,2.2796854 -0.397304,0.649714 -0.839766,1.447085 -0.983241,1.771942 -0.681092,1.542094 -1.390652,33.3402046 -0.761869,34.1421816 0.177103,0.225888 1.483602,3.799559 2.903307,7.94147 1.419713,4.141919 3.185244,8.85972 3.923398,10.483997 0.738147,1.624285 1.576049,3.63183 1.861999,4.461208 0.28595,0.829387 0.86649,2.057003 1.29011,2.728041 l 0.77019,1.220072 -1.18921,0.190156 c -1.52246,0.243451 -1.73242,0.588535 -0.49887,0.819947 1.58974,0.298239 2.13876,0.882857 2.57604,2.743107 0.22208,0.944733 0.48702,1.784144 0.58878,1.865358 0.10174,0.08122 0.46484,1.543064 0.80687,3.248563 0.34204,1.705495 0.76937,3.831829 0.94963,4.725186 0.49113,2.433939 1.46876,12.785361 1.47966,15.66693 0.005,1.388764 0.12431,2.651269 0.26457,2.805575 0.50656,0.55729 0.95064,2.394943 1.20916,5.003624 0.41347,4.172305 0.31727,4.406374 -2.9408,7.155234 -4.79375,4.044521 -1.16684,3.626201 -31.440233,3.626201 l -26.147928,0 0,-1.78499 z M 13.291792,48.687124 C 12.791882,45.031661 10.793237,38.684823 8.73622,34.220512 7.86272,32.324775 6.797118,29.533964 6.36822,28.01871 5.939322,26.503456 5.406443,25.053898 5.184035,24.797468 4.961627,24.541032 4.779659,24.175571 4.779659,23.985326 c 0,-0.190245 -0.132894,-0.345899 -0.295322,-0.345899 -0.162429,0 -0.2965,0.76415 -0.297929,1.69811 -0.0015,0.93396 -0.01214,4.688266 -0.02384,8.342899 -0.01666,5.229401 0.07137,6.86146 0.41352,7.661978 0.456707,1.068668 8.092682,9.168495 8.645219,9.170391 0.222585,7.4e-4 0.244072,-0.556128 0.07041,-1.825681 z"
+       id="girl"
+       inkscape:connector-curvature="0" />
   </g>
   <g
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Righteous;-inkscape-font-specification:'Righteous, Normal';text-align:left;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
