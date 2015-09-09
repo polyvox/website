@@ -69,7 +69,7 @@
                   <h3 class="episode-number">Episode #<span>{{ items[0].number }}</span></h3>
                   <h1 class="latest-title">{{ items[0].title }}</h1>
                   <h2 class="publication-date">{{ items[0].formattedPubDate }}</h2>
-                  <div class="latest-subtitle">{{ items[0].description }}</div>
+                  <div class="latest-subtitle">{{ items[0].itunes_subtitle }}</div>
                   <div class="layout horizontal">
                     <div class="flex text-left">
                       <paper-button>
@@ -167,7 +167,7 @@
                   number="{{ this.number }}"
                   cardtitle="{{ this.title }}"
                   pubdate="{{ this.formattedPubDate }}"
-                  description="{{ this.description }}"
+                  description="{{ this.itunes_subtitle }}"
                   audiolink="{{ this.enclosure['@url'] }}"
                   detailslink="{{ this.detailsLink }}"></polyvox-podcast-card>
               {{/items}}
