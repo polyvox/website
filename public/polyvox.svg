@@ -17,9 +17,9 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="polyvox.svg"
-   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode8.1000.png "
-   inkscape:export-xdpi="491.48001"
-   inkscape:export-ydpi="491.48001">
+   inkscape:export-filename="/Users/curtis/Desktop/polyvox.episode8.1000.png"
+   inkscape:export-xdpi="514.28998"
+   inkscape:export-ydpi="514.28998">
   <defs
      id="defs4">
     <clipPath
@@ -549,30 +549,30 @@
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/bud-light.png"
        xlink:href="bud-light.png"
-       y="-32.870659"
-       x="88.85099"
-       id="image4280"
-       preserveAspectRatio="none"
+       width="68.2481"
        height="49.173634"
-       width="68.2481" />
+       preserveAspectRatio="none"
+       id="image4280"
+       x="88.85099"
+       y="-32.870659" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/donald-trump.png"
        xlink:href="donald-trump.png"
-       width="22.049389"
-       height="31.849115"
-       preserveAspectRatio="none"
-       id="image4280-3"
+       y="70.654076"
        x="-15.839851"
-       y="70.654076" />
+       id="image4280-3"
+       preserveAspectRatio="none"
+       height="31.849115"
+       width="22.049389" />
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/john-oliver.png"
        xlink:href="john-oliver.png"
-       width="39.898891"
-       height="33.074081"
-       preserveAspectRatio="none"
-       id="image4345"
+       y="69.429108"
        x="118.76099"
-       y="69.429108" />
+       id="image4345"
+       preserveAspectRatio="none"
+       height="33.074081"
+       width="39.898891" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -667,12 +667,12 @@
     <image
        sodipodi:absref="/Users/curtis/dev/polyvox/website/public/hana.jpg"
        xlink:href="hana.jpg"
-       y="-72.496811"
-       x="-15.839851"
-       id="image4346"
-       preserveAspectRatio="none"
+       width="175"
        height="175"
-       width="175" />
+       preserveAspectRatio="none"
+       id="image4346"
+       x="-15.839851"
+       y="-72.496811" />
     <rect
        style="fill:#000000;fill-opacity:0.49803922;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0"
        id="rect4349"
