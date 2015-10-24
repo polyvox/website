@@ -15,7 +15,7 @@
   <body class="fullbleed" unresolved>
     {{#items}}
       <paper-material class="comment-block">
-        <header>
+        <header class="slightly-larger">
         <span class="latest-title">{{ title }}</span>
         <span class="episode-number">(#<span>{{ number }}</span>)</span>
         <span> - </span>

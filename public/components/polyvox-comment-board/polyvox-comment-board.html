@@ -1,15 +1,67 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/firebase-element/firebase-collection.html">
 
 <dom-module id="polyvox-comment-board">
   <template>
-    
+    <style>
+      section {
+        margin-top: 1em;
+      }
+
+      .not-as-important {
+        color: var(--paper-grey-500);
+      }
+    </style>
+    <firebase-collection
+      order-by-key-"true"
+      location="{{url}}"
+      data="{{waitingOnComments}}"
+      on-firebase-child-added="_something"></firebase-collection>
+    <div><i class="not-as-important">[[ message ]]</i></div>
+    <template is="dom-repeat" items="[[comments]]" as="comment">
+      <section>
+        <header><b>{{ comment.user }}</b> writes</header>
+        <div>[[ comment.comment ]]</div>
+      </section>
+    </template>
   </template>
   <script>
     Polymer({
       is: 'polyvox-comment-board',
 
       properties: {
-        id: String
+        id: String,
+        url: { computed: 'craftUrl(id)' },
+        waitingOnComments: Array,
+        comments: {
+          type: Array,
+          value: []
+        },
+        message: {
+          type: String,
+          value: 'loading...'
+        }
+      },
+
+      attached: function () {
+        this.debounce('comments', this._somethingElse, 500);
+      },
+
+      craftUrl: function (id) {
+        return 'https://polyvox-discussion.firebaseio.com/discussions/' + id + '/entries';
+      },
+
+      _something: function () {
+        this.debounce('comments', this._somethingElse);
+      },
+
+      _somethingElse: function () {
+        this.comments = this.waitingOnComments;
+
+        if (this.comments.length > 0) {
+          this.message = '';
+        } else {
+          this.message = 'no comments';
+        }
       }
     });
   </script>
