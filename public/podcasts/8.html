@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Episode #8 - Heather and Curtis Birthday Bash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="import" href="/bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/components/polyvox-html/polyvox-html.html">
+    <link rel="import" href="/styles/podcasts.html">
+  </head>
+  <body class="fullbleed" unresolved data-podcast-id="f72857b2-b11d-4869-b257-f4c15e0a0d18">
+    <main class="layout horizontal">
+      <section class="show-notes flex">
+        <nav>
+          <a href="/#podcasts">
+            <iron-icon icon="arrow-back"></iron-icon>
+            <span>Back to podcasts list</span>
+          </a>
+        </nav>
+        <header><h1>Show notes</h1></header>
+        <polyvox-html html="<ul><li>Curtis babbles about tasty edibles 
+</li>
+<li>The dreaded brief talk about podcasting equipment 
+</li>
+<li>Notes, <a href=&quot;http://fieldnotesbrand.com&quot;>Field Notes</a>, and note-taking habits 
+</li>
+<li>Curtis&#39; new <a href=&quot;http://www.daskeyboard.com&quot;>Das Keyboard</a> for Mac 
+</li>
+<li>Follow up: Bryan&#39;s Breakfast at Tiffany&#39;s review 
+</li>
+<li>The location of consciousness 
+</li>
+<li>CONCERTS! 
+</li>
+<li>The archaelogical dig of Bryan&#39;s Amazon Wish List 
+</li>
+<li>Heather&#39;s birthday gifts review 
+</li>
+<li>Dream interpretation by Heather 
+</li>
+<li>Curtis&#39; birthday gifts review 
+</li>
+<li>polyvox swag 
+</li>
+<li>The Internet of Mobs 
+</li>
+<li>Heather and Bryan take the (now closed) <a href=&quot;https://xkcd.com/1572/&quot;>XKCD survey</a>!</li>
+</ul>"></polyvox-html>
+      </section>
+      <section id="comments-block" class="discussions flex-2">
+        <header>
+          <h1>
+            <span>Episode #</span>
+            <span>8</span>
+            <span> - </span>
+            <span>Heather and Curtis Birthday Bash</span>
+          </h1>
+          <h2>Discussion</h2>
+        </header>
+        <h2 class="only-during-db-load">loading comments...</h2>
+        <section class="waiting-for-db-load" id="comments">
+
+        </section>
+        <section class="waiting-for-db-load" id="new-comment">
+          <form id="comment-form">
+            <img class="your-image profile-image" src>
+            <div class="inputs">
+              <header class="sign-in-list">
+                <div>post anonymously or sign in with</div>
+                <a href="#" class="login" data-method="twitter"><i class="fa fa-twitter"></i></a>
+              </header>
+              <textarea id="comment" placeholder="tell us what you think..."></textarea>
+              <div class="form-actions">
+                <button type="submit" class="elevation-1">take that, polyvox!</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <template id="comment-template">
+      <div class="user-comment">
+        <img class="profile-image">
+        <div class="comment-stack">
+          <header class="comment-header">
+            <div class="user"></div>
+            <div class="date-time"></div>
+          </header>
+          <div class="comment-content"></div>
+        </div>
+      </div>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.17/store.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    <script src="/scripts/podcast.js"></script>
+  </body>
+</html>

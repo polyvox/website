@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Episode #7 - Islamabad Taco Bell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="import" href="/bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="/components/polyvox-html/polyvox-html.html">
+    <link rel="import" href="/styles/podcasts.html">
+  </head>
+  <body class="fullbleed" unresolved data-podcast-id="ec3a961a-53dd-450a-9451-5df39c60fe9d">
+    <main class="layout horizontal">
+      <section class="show-notes flex">
+        <nav>
+          <a href="/#podcasts">
+            <iron-icon icon="arrow-back"></iron-icon>
+            <span>Back to podcasts list</span>
+          </a>
+        </nav>
+        <header><h1>Show notes</h1></header>
+        <polyvox-html html="<ul><li>Heather introduces Bryan and Curtis 
+</li>
+<li>Rim shot! 
+</li>
+<li>A search for boring topics 
+</li>
+<li>Mad Max: Fury Road 
+</li>
+<li>Ageism 
+</li>
+<li>Tariq&#39;s wicked-weird dream 
+</li>
+<li>Heather&#39;s Primate Science Quiz 
+</li>
+<li>Amazon: both sides of the controversy 
+</li>
+<li>US immigration policy and &quot;the right of the soil&quot; 
+</li>
+<li>&quot;Female Viagra&quot; 
+</li>
+<li>Bryan gets quiet... 
+</li>
+<li>Tariq corrects Curtis on lice and nitpicking 
+</li>
+</ul>"></polyvox-html>
+      </section>
+      <section id="comments-block" class="discussions flex-2">
+        <header>
+          <h1>
+            <span>Episode #</span>
+            <span>7</span>
+            <span> - </span>
+            <span>Islamabad Taco Bell</span>
+          </h1>
+          <h2>Discussion</h2>
+        </header>
+        <h2 class="only-during-db-load">loading comments...</h2>
+        <section class="waiting-for-db-load" id="comments">
+
+        </section>
+        <section class="waiting-for-db-load" id="new-comment">
+          <form id="comment-form">
+            <img class="your-image profile-image" src>
+            <div class="inputs">
+              <header class="sign-in-list">
+                <div>post anonymously or sign in with</div>
+                <a href="#" class="login" data-method="twitter"><i class="fa fa-twitter"></i></a>
+              </header>
+              <textarea id="comment" placeholder="tell us what you think..."></textarea>
+              <div class="form-actions">
+                <button type="submit" class="elevation-1">take that, polyvox!</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <template id="comment-template">
+      <div class="user-comment">
+        <img class="profile-image">
+        <div class="comment-stack">
+          <header class="comment-header">
+            <div class="user"></div>
+            <div class="date-time"></div>
+          </header>
+          <div class="comment-content"></div>
+        </div>
+      </div>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/store.js/1.3.17/store.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+    <script src="/scripts/podcast.js"></script>
+  </body>
+</html>

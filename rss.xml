@@ -10,7 +10,7 @@
             <link>http://polyvox.audio</link>
         </image>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 19 Jul 2015 03:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2015 15:00:00 GMT</lastBuildDate>
         <atom:link href="http://podcasts.polyvox.audio/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[2015 by polyvox]]></copyright>
         <language><![CDATA[en]]></language>
@@ -33,44 +33,498 @@
         <item>
             <title><![CDATA[Beefsteak Handshake]]></title>
             <description><![CDATA[In our inaugural podcast, we start with the underhandedness of SourceForge and conclude with vending machines in public restrooms.]]></description>
-            <link>http://polyvox.audio/#podcasts</link>
+            <link>http://polyvox.audio/podcasts/1.html</link>
             <guid isPermaLink="false">2CA119D7-1A5D-4CBE-BE5D-06A001B53B52</guid>
             <category><![CDATA[Society and Culture]]></category>
             <category><![CDATA[Technology]]></category>
             <pubDate>Wed, 17 Jun 2015 05:00:00 GMT</pubDate>
             <enclosure url="http://podcasts.polyvox.audio/media/0001/01%20Beefsteak%20Handshake.mp3" length="0" type="audio/mpeg"/>
             <itunes:subtitle>Greeting one another and the Internet with an inaugural podcast.</itunes:subtitle>
-            <itunes:summary><![CDATA[What did we talk about?<ul><li>The recent underhandedness of SourceForge.net and how it relates to Pulp Fiction</li><li>Bryan's new Apple Watch</li><li>Starbuck's, banks, Amazon, and all of the other Big Brothers</li><li>Blackpowder, gunpowder and shooting stuff</li><li>Bryan's upcoming birthday</li><li>Keanu Reeves and Shia LeBouf</li><li>Using smartphones for their smart and not their phone</li><li>Long-format writing</li><li>Gonzo journalism</li><li>Our first vinyl records, cassette tapes, and CDs</li><li><a href="http://www.youtube.com/watch?v=2pv4xmZF_EI">Underdog</a></li><li>The mysteries of mattresses and pillows</li><li>Vending machines in public restrooms</li><li>The <a href="https://en.wikipedia.org/wiki/Half_cent_(United_States_coin)">Ha' penny</a></ul><p>And, a listener submitted photo!</p><p><img src="http://podcasts.polyvox.audio/media/0001/peccadillo.jpg" class="poly-img"></p>]]></itunes:summary>
+            <itunes:summary><![CDATA[What did we talk about?<ul><li>The recent underhandedness of SourceForge.net and how it relates to Pulp Fiction</li>
+
+<li>Bryan's new Apple Watch</li>
+
+<li>Starbuck's, banks, Amazon, and all of the other Big Brothers</li>
+
+<li>Blackpowder, gunpowder and shooting stuff</li>
+
+<li>Bryan's upcoming birthday</li>
+
+<li>Keanu Reeves and Shia LeBouf</li>
+
+<li>Using smartphones for their smart and not their phone</li>
+
+<li>Long-format writing</li>
+
+<li>Gonzo journalism</li>
+
+<li>Our first vinyl records, cassette tapes, and CDs</li>
+
+<li>
+<a href="http://www.youtube.com/watch?v=2pv4xmZF_EI">Underdog</a></li>
+
+<li>The mysteries of mattresses and pillows</li>
+
+<li>Vending machines in public restrooms</li>
+
+<li>The <a href="https://en.wikipedia.org/wiki/Half_cent_(United_States_coin)">Ha' penny</a></ul><p>And, a listener submitted photo!</p><p><img src="http://podcasts.polyvox.audio/media/0001/peccadillo.jpg" class="poly-img"></p>]]></itunes:summary>
             <itunes:image href="http://podcasts.polyvox.audio/media/0001/polyvox.episode1.3000.png"/>
             <itunes:duration>1:49:24</itunes:duration>
         </item>
         <item>
             <title><![CDATA[Bryan Has a Birthday]]></title>
             <description><![CDATA[The sequel to the first episode!]]></description>
-            <link>http://polyvox.audio/#podcasts</link>
+            <link>http://polyvox.audio/podcasts/2.html</link>
             <guid isPermaLink="false">97B1E26E-46C2-456B-87D2-EC140EE2DC8A</guid>
             <category><![CDATA[Society and Culture]]></category>
             <category><![CDATA[Technology]]></category>
             <pubDate>Wed, 01 Jul 2015 05:00:00 GMT</pubDate>
             <enclosure url="http://podcasts.polyvox.audio/media/0002/02%20Bryan%20Has%20a%20Birthday.mp3" length="0" type="audio/mpeg"/>
             <itunes:subtitle>Happiness is having a rare steak, a bottle of scotch, and a dog to eat the rare steak.</itunes:subtitle>
-            <itunes:summary><![CDATA[Another couple of hours of pure, ignorant bliss filled by...<ul><li>Heather learns about advanced microphone setup</li><li>Getting used to our voices</li><li>Bryan admires <a href="http://shirt.woot.com/offers/nerd-happens">Curtis' T-shirt</a> (which you can't see!)</li><li>Biomimetics as a science, an art, and a company name</li><li>Let's <a href="https://www.youtube.com/watch?v=wFyY2mK8pxk">pluralize octopus</a>!</li><li><i>COUGH!</i></li><li>Heather presents NOT THE NEWS</li><li>Revisit the meaning of "NOT THE NEWS" with the <a href="https://en.wikipedia.org/wiki/2015_Texas_pool_party_incident">2015 Texas pool party incident</a> as the example</li><li>Civil disobedience: structured vs. unstructured</li><li>More sight gags that <a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Tab_3_7.0#Special_editions">you can't see</a>!</li><li><a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_Edge">Samsung Galaxy Note Edge</a></li><li>Heather's and Curtis' life advice for Bryan on his birthday</li><li>Sleeping gear</li><li>Dave Chappelle making history</li></ul>]]></itunes:summary>
+            <itunes:summary><![CDATA[Another couple of hours of pure, ignorant bliss filled by...<ul><li>Heather learns about advanced microphone setup</li>
+
+<li>Getting used to our voices</li>
+
+<li>Bryan admires <a href="http://shirt.woot.com/offers/nerd-happens">Curtis' T-shirt</a> (which you can't see!)</li>
+
+<li>Biomimetics as a science, an art, and a company name</li>
+
+<li>Let's <a href="https://www.youtube.com/watch?v=wFyY2mK8pxk">pluralize octopus</a>!</li>
+
+<li>
+<i>COUGH!</i></li>
+
+<li>Heather presents NOT THE NEWS</li>
+
+<li>Revisit the meaning of "NOT THE NEWS" with the <a href="https://en.wikipedia.org/wiki/2015_Texas_pool_party_incident">2015 Texas pool party incident</a> as the example</li>
+
+<li>Civil disobedience: structured vs. unstructured</li>
+
+<li>More sight gags that <a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Tab_3_7.0#Special_editions">you can't see</a>!</li>
+
+<li>
+<a href="https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_Edge">Samsung Galaxy Note Edge</a></li>
+
+<li>Heather's and Curtis' life advice for Bryan on his birthday</li>
+
+<li>Sleeping gear</li>
+
+<li>Dave Chappelle making history</li>
+
+</ul>]]></itunes:summary>
             <itunes:image href="http://podcasts.polyvox.audio/media/0002/polyvox.episode2.3000.png"/>
             <itunes:duration>1:55:27</itunes:duration>
         </item>
         <item>
             <title><![CDATA[What if We Had a Sponsor?]]></title>
             <description><![CDATA[Filmed in TECHNICOLOR (TM)]]></description>
-            <link>http://polyvox.audio/#podcasts</link>
+            <link>http://polyvox.audio/podcasts/3.html</link>
             <guid isPermaLink="false">A532D6A4-C1D5-43AF-811A-83F6F273C3FF</guid>
             <category><![CDATA[Society and Culture]]></category>
             <category><![CDATA[Technology]]></category>
             <pubDate>Wed, 15 Jul 2015 05:00:00 GMT</pubDate>
             <enclosure url="http://podcasts.polyvox.audio/media/0003/03%20What%20if%20We%20Had%20a%20Sponsor.mp3" length="0" type="audio/mpeg"/>
             <itunes:subtitle>No, wait! We&apos;re not corporate sell-outs!</itunes:subtitle>
-            <itunes:summary><![CDATA[Give me liberty or give me...<ul><li>Who would we want as our sponsor?<ul><li><a href="http://www.budlight.com/our-beers/lime-beer.html">Budlight Lime</a> (probably not)</li><li><a href="http://www.iamjohnoliver.com">John Oliver</a></li><li><a href="http://www.hollowdeckpress.com">Hollowdeck Press</a></li><li><a href="http://www.halliburton.com/en-US/default.page">Halliburton</a></li><li><a href="https://www.canada.travel">formerly the Canadian Tourism Commission</a></li><li>Happy Madison Productions</li><li><a href="http://www.trump.com">Donald Trump</a></li><li><a href="http://www.audible.com">Audible</a></li><li><a href="http://www.spanx.com">SPANX</a></li><li><a href="http://www.gatorade.com">Gatorade</a></li><li><a href="http://www.ettore.com">Ettore</a></li><li><a href="http://www.jbropesupply.com">J. B. Rope Supply</a></li><li><a href="http://skylineservicesinc.net">Skyline High Rise Services</a></li><li>Chris Pratt, PLEASE!</li></ul></li><li>Short pants</li><li><a href="http://seaworldparks.com">SeaWorld</a></li><li>Drew and Adam</li><li>Amazon Prime fails Bryan</li><li>Follow-up on the purity of the Weather Channel's line-up</li><li>The redemption of Brian Williams</li><li>¡Fireworks!</li><li>The Myth of Mythbusters</li><li>Undergarments</li><li>Follow-up on Heather's story-for-a-house</li><li>The Sinking of the RMS Lusitania</li><li>SKINNY JEANS WARNING!</li><li><i>This Is Where I Leave You</i></li><li>Curtis got a haircut</li><li>Little kid English</li><li>Steinbeck</li><li>Sky-scraper window washers</li><li>Sensory deprivation booths</li><li>Mani/pedi salon experiences</li><li>Fireworks</li><li>Jurassic World</li><li><a href="https://www.youtube.com/watch?v=hRUy-D0JU2I">Miguel Rivera playing Beat It</a></li></ul>]]></itunes:summary>
+            <itunes:summary><![CDATA[Give me liberty or give me...<ul><li>Who would we want as our sponsor?<ul><li>
+<a href="http://www.budlight.com/our-beers/lime-beer.html">Budlight Lime</a> (probably not)</li>
+
+<li>
+<a href="http://www.iamjohnoliver.com">John Oliver</a></li>
+
+<li>
+<a href="http://www.hollowdeckpress.com">Hollowdeck Press</a></li>
+
+<li>
+<a href="http://www.halliburton.com/en-US/default.page">Halliburton</a></li>
+
+<li>
+<a href="https://www.canada.travel">formerly the Canadian Tourism Commission</a></li>
+
+<li>Happy Madison Productions</li>
+
+<li>
+<a href="http://www.trump.com">Donald Trump</a></li>
+
+<li>
+<a href="http://www.audible.com">Audible</a></li>
+
+<li>
+<a href="http://www.spanx.com">SPANX</a></li>
+
+<li>
+<a href="http://www.gatorade.com">Gatorade</a></li>
+
+<li>
+<a href="http://www.ettore.com">Ettore</a></li>
+
+<li>
+<a href="http://www.jbropesupply.com">J. B. Rope Supply</a></li>
+
+<li>
+<a href="http://skylineservicesinc.net">Skyline High Rise Services</a></li>
+
+<li>Chris Pratt, PLEASE!</li>
+
+</ul></li>
+
+<li>Short pants</li>
+
+<li>
+<a href="http://seaworldparks.com">SeaWorld</a></li>
+
+<li>Drew and Adam</li>
+
+<li>Amazon Prime fails Bryan</li>
+
+<li>Follow-up on the purity of the Weather Channel's line-up</li>
+
+<li>The redemption of Brian Williams</li>
+
+<li>¡Fireworks!</li>
+
+<li>The Myth of Mythbusters</li>
+
+<li>Undergarments</li>
+
+<li>Follow-up on Heather's story-for-a-house</li>
+
+<li>The Sinking of the RMS Lusitania</li>
+
+<li>SKINNY JEANS WARNING!</li>
+
+<li>
+<i>This Is Where I Leave You</i></li>
+
+<li>Curtis got a haircut</li>
+
+<li>Little kid English</li>
+
+<li>Steinbeck</li>
+
+<li>Sky-scraper window washers</li>
+
+<li>Sensory deprivation booths</li>
+
+<li>Mani/pedi salon experiences</li>
+
+<li>Fireworks</li>
+
+<li>Jurassic World</li>
+
+<li>
+<a href="https://www.youtube.com/watch?v=hRUy-D0JU2I">Miguel Rivera playing Beat It</a></li>
+
+</ul>]]></itunes:summary>
             <itunes:image href="http://podcasts.polyvox.audio/media/0003/polyvox.episode3.1000.png"/>
             <itunes:duration>1:33:11</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Hawai'i, Sorkinville, and Politics! ... oh my]]></title>
+            <description><![CDATA[Welcome back, Bryan!]]></description>
+            <link>http://polyvox.audio/podcasts/4.html</link>
+            <guid isPermaLink="false">AFBD02DB-DB68-4F47-AA9F-8C32C08646C8</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 29 Jul 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0004/hawaii-sorkinville-politics-oh-my.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>We&apos;re now selling Roman Catholic prayer candles with Saint Machete on them.</itunes:subtitle>
+            <itunes:summary><![CDATA[A tea candle is not a candle...<ul><li>Hawai'i</li>
+
+<li>Sorkinville</li>
+
+<li>Heather becomes a bookie</li>
+
+<li>The amazing <a href="https://en.wikipedia.org/wiki/Steve_Buscemi">Steve Buscemi</a></li>
+
+<li>The amazing <a href="http://dannytrejo.net">Danny Trejo</a></li>
+
+<li>2016 U.S. Presidential Politics</li>
+
+</ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0004/polyvox.episode4.1000.png"/>
+            <itunes:duration>1:47:59</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[...With a Special Guest]]></title>
+            <description><![CDATA[Introducing our first special guest.]]></description>
+            <link>http://polyvox.audio/podcasts/5.html</link>
+            <guid isPermaLink="false">d5c3021c-b212-42fe-8eae-415ff9f2114f</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 12 Aug 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0005/with-a-special-guest.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Introducing our first special guest.</itunes:subtitle>
+            <itunes:summary><![CDATA[<div>Episode Scorecard: 
+<ul><li><a href="https://en.wikipedia.org/wiki/Black_Mirror_(TV_series)">Black Mirror</a>: 1 love, 1 meh, 2 wtf? 
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Danger_5">Danger Five</a>: 2 love, 0 meh, 2 wtf? 
+</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Leftovers_(TV_series)">The Leftovers</a>: 1 love, 1 meh, 2 wtf? 
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Fringe_(TV_series)">Fringe</a>: 1 love, 1 meh, 2 wtf? 
+</li>
+</ul></div> <div>Also 
+<ul><li>Heather gets locked out of her house 
+</li>
+<li>Piracy, the old-fashioned way 
+</li>
+<li>Camping in Bosnia 
+</li>
+<li>Foreign language childhood songs 
+</li>
+<li>Old people, old movies 
+</li>
+<li>Cartoons of the 90s 
+</li>
+</ul></div><div>(Marcus, a special message for you at 1:00:58.)</div>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0005/polyvox.episode5.1000.png"/>
+            <itunes:duration>1:50:58</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Oh, What a Luxury It Be]]></title>
+            <description><![CDATA[The score: Bryan 42%, Heather 42%, Curtis 16%]]></description>
+            <link>http://polyvox.audio/podcasts/6.html</link>
+            <guid isPermaLink="false">bd4d2f23-15ee-4276-9a9f-e4fe206e3d5e</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 26 Aug 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0006/smooth-jazz-and-dirty-limeericks.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>The score: Bryan 42%, Heather 42%, Curtis 16%</itunes:subtitle>
+            <itunes:summary><![CDATA[<ul><li>We talk about The Wiz, Wizards, The Wizard 
+</li>
+<li>Bryan’s broken phone (a moment of silence, please) 
+</li>
+<li>Agile.NEXT Conference discussion - what we learned 
+</li>
+<li>Movie ideas and Bryan’s wonderful amazing transition in to Entourage 
+</li>
+<li>Best software we’ve used 
+</li>
+<li>Minor dabble in to money and how it can influence politics 
+</li>
+<li>Heather explains “The Yes Game” 
+</li>
+<li>Heather has difficulty finding which way is North 
+</li>
+<li>Hygeine and hands-free peeing 
+</li>
+<li>Malcolm Gladwell’s Connectors, Mavens, and Salesmen 
+</li>
+<li>Curtis' high-school presidential campaign 
+</li>
+</ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/polyvox.green.512.png"/>
+            <itunes:duration>1:39:57</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Islamabad Taco Bell]]></title>
+            <description><![CDATA[<ul><li>Heather introduces Bryan and Curtis</li>
+<li>Rim shot!</li>
+<li>A search for boring topics</li>
+<li>Mad Max: Fury Road</li>
+<li>Ageism</li>
+<li>Tariq's wicked-weird dream</li>
+<li>Heather's Primate Science Quiz</li>
+<li>Amazon: both sides of the controversy</li>
+<li>US immigration policy and "the right of the soil"</li>
+<li>"Female Viagra"</li>
+<li>Bryan gets quiet...</li>
+<li>Tariq corrects Curtis on lice and nitpicking</li>
+</ul>]]></description>
+            <link>http://polyvox.audio/podcasts/7.html</link>
+            <guid isPermaLink="false">ec3a961a-53dd-450a-9451-5df39c60fe9d</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 09 Sep 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0007/its-all-about-the-intros.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Our friend, Tariq, shows up on the podcast</itunes:subtitle>
+            <itunes:summary><![CDATA[<ul><li>Heather introduces Bryan and Curtis 
+</li>
+<li>Rim shot! 
+</li>
+<li>A search for boring topics 
+</li>
+<li>Mad Max: Fury Road 
+</li>
+<li>Ageism 
+</li>
+<li>Tariq's wicked-weird dream 
+</li>
+<li>Heather's Primate Science Quiz 
+</li>
+<li>Amazon: both sides of the controversy 
+</li>
+<li>US immigration policy and "the right of the soil" 
+</li>
+<li>"Female Viagra" 
+</li>
+<li>Bryan gets quiet... 
+</li>
+<li>Tariq corrects Curtis on lice and nitpicking 
+</li>
+</ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0007/polyvox.episode7.1000.png"/>
+            <itunes:duration>1:51:40</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Heather and Curtis Birthday Bash]]></title>
+            <description><![CDATA[<ul><li>Curtis babbles about tasty edibles 
+</li>
+<li>The dreaded brief talk about podcasting equipment 
+</li>
+<li>Notes, <a href="http://fieldnotesbrand.com">Field Notes</a>, and note-taking habits 
+</li>
+<li>Curtis' new <a href="http://www.daskeyboard.com">Das Keyboard</a> for Mac 
+</li>
+<li>Follow up: Bryan's Breakfast at Tiffany's review 
+</li>
+<li>The location of consciousness 
+</li>
+<li>CONCERTS! 
+</li>
+<li>The archaelogical dig of Bryan's Amazon Wish List 
+</li>
+<li>Heather's birthday gifts review 
+</li>
+<li>Dream interpretation by Heather 
+</li>
+<li>Curtis' birthday gifts review 
+</li>
+<li>polyvox swag 
+</li>
+<li>The Internet of Mobs 
+</li>
+<li>Heather and Bryan take the (now closed) <a href="https://xkcd.com/1572/">XKCD survey</a>!</li>
+</ul>]]></description>
+            <link>http://polyvox.audio/podcasts/8.html</link>
+            <guid isPermaLink="false">f72857b2-b11d-4869-b257-f4c15e0a0d18</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 23 Sep 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0008/heather-and-curtis-birthdays-galore.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Dreams of lobsters and lobster dreams</itunes:subtitle>
+            <itunes:summary><![CDATA[<ul><li>Curtis babbles about tasty edibles 
+</li>
+<li>The dreaded brief talk about podcasting equipment 
+</li>
+<li>Notes, <a href="http://fieldnotesbrand.com">Field Notes</a>, and note-taking habits 
+</li>
+<li>Curtis' new <a href="http://www.daskeyboard.com">Das Keyboard</a> for Mac 
+</li>
+<li>Follow up: Bryan's Breakfast at Tiffany's review 
+</li>
+<li>The location of consciousness 
+</li>
+<li>CONCERTS! 
+</li>
+<li>The archaelogical dig of Bryan's Amazon Wish List 
+</li>
+<li>Heather's birthday gifts review 
+</li>
+<li>Dream interpretation by Heather 
+</li>
+<li>Curtis' birthday gifts review 
+</li>
+<li>polyvox swag 
+</li>
+<li>The Internet of Mobs 
+</li>
+<li>Heather and Bryan take the (now closed) <a href="https://xkcd.com/1572/">XKCD survey</a>!</li>
+</ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0008/polyvox.episode8.1000.png"/>
+            <itunes:duration>1:51:40</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[Technical Difficulties: Please Stand By]]></title>
+            <description><![CDATA[<ul><li>Bryan has technical difficulty   </li>
+<li>Heather drives to an appointment and <a href="https://goo.gl/maps/kFP7hnsHFZU2" target="_blank">hits traffic</a>   </li>
+<li>The pleasure of maintaining a list   </li>
+<li>Middletros of Bryan and Heather  </li>
+<li>Bryan's continued woes about keeping a digital library   </li>
+<li>iOS 9: release and features  </li>
+<li><a href="https://en.wikipedia.org/wiki/James_Spader" target="_blank">James Spader!</a>   </li>
+<li>Follow-Up: Donation to Our Lady of Perpetual Exemption   </li>
+<li><a href="https://en.wikipedia.org/wiki/Ghost_Dog:_The_Way_of_the_Samurai" target="_blank">Ghost Dog: The Way of the Samurai</a>  </li>
+<li>Watching news and not watching news  </li>
+<li>Update on The Building of Tariq's House  </li>
+<li>The loss of Alex McLeod from Trading Spaces  </li>
+<li>Curtis' Shirt Social Experiment  </li>
+<li>Gross Artwork  </li>
+<li><a href="https://en.wikipedia.org/wiki/Ahmed_Mohamed_clock_incident" target="_blank">Ahmed Mohammed</a>  </li>
+<li>Bryan's follow-up time measurement quiz  </li>
+<li>Indian astrological time   </li>
+<li>Jack smack   </li>
+</ul>]]></description>
+            <link>http://polyvox.audio/podcasts/9.html</link>
+            <guid isPermaLink="false">09cf1b8a-0d3a-4714-8c41-99613a8e9743</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 07 Oct 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0009/bryan-has-technical-difficulties.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>Clocks as bombs and shirts</itunes:subtitle>
+            <itunes:summary><![CDATA[<ul><li>Bryan has technical difficulty   </li>
+<li>Heather drives to an appointment and <a href="https://goo.gl/maps/kFP7hnsHFZU2" target="_blank">hits traffic</a>   </li>
+<li>The pleasure of maintaining a list   </li>
+<li>Middletros of Bryan and Heather  </li>
+<li>Bryan's continued woes about keeping a digital library   </li>
+<li>iOS 9: release and features  </li>
+<li><a href="https://en.wikipedia.org/wiki/James_Spader" target="_blank">James Spader!</a>   </li>
+<li>Follow-Up: Donation to Our Lady of Perpetual Exemption   </li>
+<li><a href="https://en.wikipedia.org/wiki/Ghost_Dog:_The_Way_of_the_Samurai" target="_blank">Ghost Dog: The Way of the Samurai</a>  </li>
+<li>Watching news and not watching news  </li>
+<li>Update on The Building of Tariq's House  </li>
+<li>The loss of Alex McLeod from Trading Spaces  </li>
+<li>Curtis' Shirt Social Experiment  </li>
+<li>Gross Artwork  </li>
+<li><a href="https://en.wikipedia.org/wiki/Ahmed_Mohamed_clock_incident" target="_blank">Ahmed Mohammed</a>  </li>
+<li>Bryan's follow-up time measurement quiz  </li>
+<li>Indian astrological time   </li>
+<li>Jack smack   </li>
+</ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0009/polyvox.episode9.1400.png"/>
+            <itunes:duration>1:18:28</itunes:duration>
+        </item>
+        <item>
+            <title><![CDATA[The Return of the King]]></title>
+            <description><![CDATA[<ul> <li>Not the NEWS!</li>
+ <li>The states of pot in states</li>
+ <li>Quiz-O-Rama!</li>
+ <li>Correction (thanks to Jack)</li>
+ <li>CUTE INTERRUPTION!</li>
+ <li>The <a href="http://www.newyorker.com/magazine/2015/07/20/the-really-big-one">Cascadia Subduction Zone</a></li>
+ <li><a href="http://www.nps.gov/mora/index.htm">Mt. Ranier National Park</a></li>
+ <li><a href="http://www.undergroundtour.com">Bill Speidel's Underground Tour</a> <li>Colbert vs. COLBERT!</li>
+ <li><a href="http://www.tickld.com/x/the-50-states-of-america-if-they-were-actually-people-in-a-bar">The 50 States Of America If They Were Actually People In A Bar.</a> <li>National events</li>
+ <li>Can we have another Steve Jobs movie?</li>
+ <li>iPhone 6 sales, other Apple products, and iOS 9 problems</li>
+ <li>The generosity of Amazon Prime</li>
+ <li><a href="http://www.wsj.com/articles/amazon-seeks-help-with-deliveries-1434466857?mod=e2tw">Amazon's Next Delivery Drone: You</a></li>
+ <li>Heather joins a writer's bootcamp</li>
+ </ul>]]></description>
+            <link>http://polyvox.audio/podcasts/10.html</link>
+            <guid isPermaLink="false">0893d36a-b501-474a-8fe1-5d7f3d2b8ac8</guid>
+            <category><![CDATA[Society and Culture]]></category>
+            <category><![CDATA[Technology]]></category>
+            <pubDate>Wed, 21 Oct 2015 05:00:00 GMT</pubDate>
+            <enclosure url="http://podcasts.polyvox.audio/media/0010/the-return-of-the-king.mp3" length="0" type="audio/mpeg"/>
+            <itunes:subtitle>The DayQuil™ Podcast</itunes:subtitle>
+            <itunes:summary><![CDATA[<ul> <li>Not the NEWS!</li>
+ <li>The states of pot in states</li>
+ <li>Quiz-O-Rama!</li>
+ <li>Correction (thanks to Jack)</li>
+ <li>CUTE INTERRUPTION!</li>
+ <li>The <a href="http://www.newyorker.com/magazine/2015/07/20/the-really-big-one">Cascadia Subduction Zone</a></li>
+ <li><a href="http://www.nps.gov/mora/index.htm">Mt. Ranier National Park</a></li>
+ <li><a href="http://www.undergroundtour.com">Bill Speidel's Underground Tour</a> <li>Colbert vs. COLBERT!</li>
+ <li><a href="http://www.tickld.com/x/the-50-states-of-america-if-they-were-actually-people-in-a-bar">The 50 States Of America If They Were Actually People In A Bar.</a> <li>National events</li>
+ <li>Can we have another Steve Jobs movie?</li>
+ <li>iPhone 6 sales, other Apple products, and iOS 9 problems</li>
+ <li>The generosity of Amazon Prime</li>
+ <li><a href="http://www.wsj.com/articles/amazon-seeks-help-with-deliveries-1434466857?mod=e2tw">Amazon's Next Delivery Drone: You</a></li>
+ <li>Heather joins a writer's bootcamp</li>
+ </ul>]]></itunes:summary>
+            <itunes:image href="http://podcasts.polyvox.audio/media/0010/polyvox.episode10.1400.png"/>
+            <itunes:duration>1:21:16</itunes:duration>
         </item>
     </channel>
 </rss>
