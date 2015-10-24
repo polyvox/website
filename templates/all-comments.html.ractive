@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>All Comments!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/paper-styles/paper-styles.html">
+    <link rel="import" href="components/polyvox-comment-board/polyvox-comment-board.html">
+    <link rel="import" href="./styles/styles.html">
+  </head>
+  <body class="fullbleed" unresolved>
+    {{#items}}
+      <paper-material class="comment-block">
+        <header>
+        <span class="latest-title">{{ title }}</span>
+        <span class="episode-number">(#<span>{{ number }}</span>)</span>
+        <span> - </span>
+        <span class="publication-date">{{ formattedPubDate }}</span>
+        </header>
+        <polyvox-comment-board id="{{ guid.keyValue }}"></polyvox-comment-board>
+      </paper-material>
+    {{/items}}
+  </body>
+</html>

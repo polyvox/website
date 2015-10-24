@@ -94,10 +94,12 @@ function generate() {
   .then(function (data) {
     var m = path.join(__dirname, 'templates', 'index.html.ractive');
     var p = path.join(__dirname, 'templates', 'podcast.html.ractive');
+    var a = path.join(__dirname, 'templates', 'all-comments.html.ractive');
     return Promise.props({
       data: data,
       main: Promise.promisify(fs.readFile)(m, 'utf8'),
       podcast: Promise.promisify(fs.readFile)(p, 'utf8'),
+      comments: Promise.promisify(fs.readFile)(a, 'utf8'),
     });
   })
 
@@ -106,6 +108,11 @@ function generate() {
     var htmls = {
       main: new Ractive({
               template: result.main,
+              preserveWhitespace: true,
+              data: result.data
+            }).toHTML(),
+      comments: new Ractive({
+              template: result.comments,
               preserveWhitespace: true,
               data: result.data
             }).toHTML(),
@@ -125,7 +132,11 @@ function generate() {
   // Save the html files
   .then(function (htmls) {
     var m = path.join(__dirname, 'public', 'index.html');
-    var a = [ Promise.promisify(fs.writeFile)(m, htmls.main) ];
+    var c = path.join(__dirname, 'public', 'all-comments.html');
+    var a = [
+      Promise.promisify(fs.writeFile)(m, htmls.main),
+      Promise.promisify(fs.writeFile)(c, htmls.comments)
+    ];
     var l = htmls.items.length;
     for (var i = 0; i < htmls.items.length; i += 1) {
       var item = htmls.items[i];
