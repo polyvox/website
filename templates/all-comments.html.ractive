@@ -16,10 +16,11 @@
     {{#items}}
       <paper-material class="comment-block">
         <header class="slightly-larger">
-        <span class="latest-title">{{ title }}</span>
-        <span class="episode-number">(#<span>{{ number }}</span>)</span>
-        <span> - </span>
-        <span class="publication-date">{{ formattedPubDate }}</span>
+          <span class="latest-title">{{ title }}</span>
+          <span class="episode-number">(#<span>{{ number }}</span>)</span>
+          <span> - </span>
+          <span class="publication-date">{{ formattedPubDate }}</span>
+          <a href="/podcasts/{{ number }}.html">visit</a>
         </header>
         <polyvox-comment-board id="{{ guid.keyValue }}"></polyvox-comment-board>
       </paper-material>
